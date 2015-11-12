@@ -1,0 +1,19 @@
+{
+    "bitwise": "true",      
+    "curly": "true",        
+    "eqeqeq": "false",      
+    "es3": "true",          
+    "freeze": "true",       
+    "indent": "true",       
+    "latedef": "nofunc",  
+    "newcap": "true",       
+    "quotmark": "false",        
+    "unused": "true",        
+    "asi": "true",
+    "boss": "true",       
+    "debug": "false",     
+    "lastsemic": "true",  
+    "browser": "true",    
+    "validthis": "true",  
+    "sub": "true"
+}

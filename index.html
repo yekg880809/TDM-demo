@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Demo page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- custom -->
+    <link href="css/custom/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="header" class="header navbar navbar-default navbar-static-top">
+      <div class="container-fluid">
+        <div class="logo col-sm-4 col-md-4 col-lg-4">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><div class = "brand-content">TDM实验室管理系统</div></a>
+          </div>
+        </div>
+
+        <div class="navbar-collapse navbar-right header-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div><!--.navbar-collapse end-->
+      </div><!--#header > .container-fluid end-->
+    </div><!-- #header end -->
+    <div class="container-fluid">
+      <div class="row">
+        <div id="menu" class="menu col-sm-2 col-md-2 col-lg-2">
+          <ul class="nav nav-stacked aside" id="aside" role="tablist" aria-multiselectable="true">
+            <ul role="presentation" class="nav nav-stacked collapse" id="rtn-main">
+              <li role="presentation"><a data-toggle="collapse" href="class1-menu"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span><span id="rtn-title">返回</span></a></li>
+            </ul>
+            <ul id="class1-menu" class="nav nav-stacked aside-menu collapse in">
+              <li role="presentation"><a data-toggle="collapse" href="#main1-menu">main1</a></li>
+              <li role="presentation"><a data-toggle="collapse" href="#main2-menu">main2</a></li>
+              <li role="presentation"><a data-toggle="collapse" href="#main3-menu">main3</a></li>
+            </ul>
+
+            <ul class="nav nav-stacked aside-menu collapse class2-menu" id="main1-menu">
+              <li class="menu-title" role="presentation"><a><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>main1</a></li>
+              <li role="presentation">
+                <a data-toggle="collapse" data-parent="#main1-menu"
+                      href="#xx1">Messages</a>
+                <div id="xx1" class="collapse list-group in">
+                  <a href='#' class="list-group-item">
+                    a
+                  </a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                </div>
+              </li>
+
+              <li role="presentation">
+                <a data-toggle="collapse" data-parent="#main1-menu"
+                      href="#xx2">Home</a>
+                <div id="xx2" class="collapse list-group">
+                  <a href='#' class="list-group-item">
+                    a
+                  </a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                </div>
+              </li>
+
+              <li role="presentation">
+                <a data-toggle="collapse" data-parent="#main1-menu"
+                      href="#xx3">Home</a>
+                <div id="xx3" class="collapse list-group">
+                  <a href='#' class="list-group-item">
+                    a
+                  </a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                </div>
+              </li>
+            </ul> 
+            
+            <ul class="nav nav-stacked aside-menu collapse class2-menu" id="main2-menu">
+              <li class="menu-title" role="presentation"><a><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>main2</a></li>
+              <li role="presentation">
+                <a data-toggle="collapse" data-parent="#main2-menu"
+                      href="#x21">Messages</a>
+                <div id="x21" class="collapse list-group in">
+                  <a href='#' class="list-group-item">
+                    a
+                  </a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                </div>
+              </li>
+
+              <li role="presentation">
+                <a data-toggle="collapse" data-parent="#main2-menu"
+                      href="#x22">Home</a>
+                <div id="x22" class="collapse list-group">
+                  <a href='#' class="list-group-item">
+                    a
+                  </a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                </div>
+              </li>
+
+              <li role="presentation">
+                <a data-toggle="collapse" data-parent="#main2-menu"
+                      href="#x23">Home</a>
+                <div id="x23" class="collapse list-group">
+                  <a href='#' class="list-group-item">
+                    a
+                  </a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                </div>
+              </li>
+            </ul> 
+
+            <ul class="nav nav-stacked aside-menu collapse class2-menu" id="main3-menu">
+              <li class="menu-title" role="presentation"><a><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>main1</a></li>
+              <li role="presentation">
+                <a data-toggle="collapse" data-parent="#main3-menu"
+                      href="#x31">Messages</a>
+                <div id="x31" class="collapse list-group in">
+                  <a href='#' class="list-group-item">
+                    a
+                  </a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                </div>
+              </li>
+
+              <li role="presentation">
+                <a data-toggle="collapse" data-parent="#main3-menu"
+                      href="#x32">Home</a>
+                <div id="x32" class="collapse list-group">
+                  <a href='#' class="list-group-item">
+                    a
+                  </a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                </div>
+              </li>
+
+              <li role="presentation">
+                <a data-toggle="collapse" data-parent="#main3-menu"
+                      href="#x33">Home</a>
+                <div id="x33" class="collapse list-group">
+                  <a href='#' class="list-group-item">
+                    a
+                  </a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                  <a href='#' class="list-group-item">a</a>
+                </div>
+              </li>
+            </ul> 
+            
+          </ul><!--#aside end-->
+        </div><!--.menu end-->
+        <div id="tree" class="tree col-sm-3 col-md-3 col-lg-3">
+        </div><!--.tree end-->
+
+        <div id="main" class="main col-sm-7 col-md-7 col-lg-7">
+
+
+        </div><!--.main end-->
+      </div><!--.row end-->
+    </div><!--.header > .container-fluid end-->
+    <div id="footer" class="footer"></div>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+
+        $('.aside-menu').on('click','li',function(e){
+            if('menu-title' == $(e.target).closest('li').attr('class')){
+              return;
+            }
+            $(this).closest('.aside-menu').find('li').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        $('#class1-menu').on('click','a',function(e){
+            $('.class2-menu').collapse('hide');
+            $('#class1-menu').collapse('hide');
+            $('#rtn-main').collapse('show');
+            $('#aside').find('.list-group-item').removeClass('active');
+        });
+
+        $('.class2-menu').on('click','a',function(e){
+            $('.class2-menu').find('.collapse').collapse('hide');
+        });
+
+        $('#rtn-main').on('click','a',function(e){
+            $('.class2-menu').collapse('hide');
+            $('#class1-menu').collapse('show');
+            $('#rtn-main').collapse('hide');
+
+        });
+
+        $('.class2-menu .collapse').on('click','a',function(e){
+            stopEvents(e);
+            $('.list-group-item').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        function stopEvents(evt){
+            evt.preventDefault();
+            evt.stopPropagation();
+        }
+
+    </script>
+  </body>
+</html>
