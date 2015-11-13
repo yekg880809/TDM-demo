@@ -40,13 +40,13 @@
         <div class="navbar-collapse navbar-right header-menu">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" id="view-resize" data-cur-view="reset" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>视口 <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+                <li><a class="resetCtrl" data-view="reset" href="#"><span class="glyphicon glyphicon-check" aria-hidden="true"></span>正常</a></li>
+                <li><a class="treeCtrl" data-view="tree" class="tree-view" href="#"><span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span>显示树</a></li>
+                <li><a class="ctnCtrl" data-view="ctnt" href="#"><span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span>隐藏树</a></li>
+               <!--  <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li> -->
               </ul>
             </li>
 
@@ -158,7 +158,7 @@
             </ul> 
 
             <ul class="nav nav-stacked aside-menu collapse class2-menu" id="main3-menu">
-              <li class="menu-title" role="presentation"><a><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>main1</a></li>
+              <li class="menu-title" role="presentation"><a><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>main3</a></li>
               <li role="presentation">
                 <a data-toggle="collapse" data-parent="#main3-menu"
                       href="#x31">Messages</a>
@@ -201,12 +201,86 @@
             
           </ul><!--#aside end-->
         </div><!--.menu end-->
-        <div id="tree" class="tree col-sm-3 col-md-3 col-lg-3">
-        </div><!--.tree end-->
+
+        <div id="tree" class="col-sm-3 col-md-3 col-lg-3">
+          <div class="tree-container">
+            <div class="tree-header">
+              <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                <a type="button" class="btn btn-info">Left</a>
+                <a type="button" class="btn btn-info">Middle</a>
+                <a type="button" class="btn btn-info">Right</a>
+              </div>
+            </div>
+            <div class="tree-body">
+              <div class="tree">
+                <ul>
+                  <span><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>试验树</span>
+                  <li>
+                    <span><a><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span></a><a href="">aaa</a></span>
+                    <ul>
+                      <li>
+                        <span><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>bbb</span>
+                        <ul>
+                          <li>
+                            <span><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>ccc</span>
+                            <ul>
+                              <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>ddd</span></li>
+                              <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>ddd</span></li>
+                              <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>ddd</span></li>
+                            </ul>
+                          </li>
+                          <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>ccc</span></li>
+                          <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>ccc</span></li>
+                        </ul>
+                      </li>
+                      <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>bbb</span></li>
+                      <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>bbb</span></li>
+                      <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>bbb</span></li>
+                    </ul>
+                  </li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                  <li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>aaa</span></li>
+                </ul>
+
+
+              </div><!--.tree end-->
+            </div><!--.tree body end-->
+          </div><!--.tree-container end-->
+        </div><!--#tree end-->
 
         <div id="main" class="main col-sm-7 col-md-7 col-lg-7">
-
-
+          <div>
+            <div></div>
+            <div></div>
+          </div>
         </div><!--.main end-->
       </div><!--.row end-->
     </div><!--.header > .container-fluid end-->
@@ -217,10 +291,17 @@
     <script src="js/jquery-1.9.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
     <script>
+      //左侧菜单基本交互操作。
+      $(function(){
+        var cls1m = $('#class1-menu'),
+            cls2m = $('.class2-menu'),
+            rtn = $('#rtn-main'),
+            asidem = $('.aside-menu'),
+            listItem = $('.list-group-item'),
+            collapse = $('.class2-menu .collapse');
 
-        $('.aside-menu').on('click','li',function(e){
+        asidem.on('click','li',function(e){
             if('menu-title' == $(e.target).closest('li').attr('class')){
               return;
             }
@@ -228,27 +309,27 @@
             $(this).addClass('active');
         });
 
-        $('#class1-menu').on('click','a',function(e){
-            $('.class2-menu').collapse('hide');
-            $('#class1-menu').collapse('hide');
-            $('#rtn-main').collapse('show');
+        cls1m.on('click','a',function(e){
+            cls2m.collapse('hide');
+            cls1m.collapse('hide');
+            rtn.collapse('show');
             $('#aside').find('.list-group-item').removeClass('active');
         });
 
-        $('.class2-menu').on('click','a',function(e){
-            $('.class2-menu').find('.collapse').collapse('hide');
+        cls2m.on('click','a',function(e){
+            cls2m.find('.collapse').collapse('hide');
         });
 
-        $('#rtn-main').on('click','a',function(e){
-            $('.class2-menu').collapse('hide');
-            $('#class1-menu').collapse('show');
-            $('#rtn-main').collapse('hide');
+        rtn.on('click','a',function(e){
+            cls2m.collapse('hide');
+            cls1m.collapse('show');
+            rtn.collapse('hide');
 
         });
 
-        $('.class2-menu .collapse').on('click','a',function(e){
+        collapse.on('click','a',function(e){
             stopEvents(e);
-            $('.list-group-item').removeClass('active');
+            listItem.removeClass('active');
             $(this).addClass('active');
         });
 
@@ -257,6 +338,38 @@
             evt.stopPropagation();
         }
 
+      });
+        
+      //屏幕视口调整基本操作
+      $(function(){
+        var CtrlBtn = $('#view-resize'),
+            CtrlBtnContainer = CtrlBtn.closest('li'),
+            treeView = $('#tree'),
+            treeCtrl = CtrlBtnContainer.find('.treeCtrl'),
+            ctntView = $('#main'),
+            ctntCtrl = CtrlBtnContainer.find('.ctntCtrl'),
+            resetCtrl = CtrlBtnContainer.find('.resetCtrl'),
+            curView = null;
+
+        CtrlBtn.on('click',function(e){
+          curView = $(this).data('curView');
+        });
+
+        CtrlBtnContainer.on('click','ul a',function(e){
+          resizeView($(e.target),curView);
+        });
+
+        function resizeView(ctrl,curView){
+          var resetSize = ['col-sm-3 col-md-3 col-lg-3','col-sm-7 col-md-7 col-lg-7'],
+              treeSize = ['col-sm-10 col-md-10 col-lg-10',''],
+              ctntSize = ['','col-sm-10 col-md-10 col-lg-10'],
+              checked = 'glyphicon-check',
+              unchecked = 'glyphicon-unchecked';
+
+          alert(curView);
+        }
+      });
+
     </script>
   </body>
-</html>
+</htm
