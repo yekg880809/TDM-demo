@@ -30,7 +30,7 @@ module.exports = function(grunt){
 	},
 
 	jshint: {
-		build: [ 'gruntfile.js' , 'js/test.js' ],
+		build: [ 'gruntfile.js' , 'js/*.js' ],
 		options: {
 			jshintrc: '.jshintrc'
 		}
@@ -61,7 +61,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
 
-  grunt.registerTask('default',['jshint','uglify','watch']);
+  grunt.registerTask('default',['jshint','watch']);
   grunt.registerTask('serve',['connect:server','watch']);
   
 

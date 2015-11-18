@@ -167,7 +167,6 @@ a > span{
 .tree ul li:before {
     border-left:1px dashed #0d394f;
     width:1px;
-    bottom: 50px;
     height: 100%;
     left: -10px;
     top: -12px;
@@ -177,8 +176,7 @@ a > span{
 .big-tree .tree ul li:before {
     border-left:1px dashed #0d394f;
     width:1px;
-    bottom: 50px;
-    height: 120%;
+    height: 348%;
     left: -10px;
     top: -20px;
     width: 1px;
@@ -203,14 +201,14 @@ a > span{
 }
 
 .tree ul > li + li:before{
-	height: 160%;
+	height: 130%;
     left: -10px;
     top: -24px;
     width: 1px;
 }
 
 .big-tree .tree ul > li + li:before{
-	height: 263%;
+	height: 137%;
     left: -10px;
     top: -50px;
     width: 1px;
@@ -229,6 +227,16 @@ a > span{
 	color: #555;
 }
 
+.tree ul li.last-child:before{
+	height: 70px;
+	top:-63px;
+}
+
+.big-tree .tree ul li.last-child:before{
+	height: 132px;
+	top:-124px;
+}
+
 .tree a{
 	color: #555;
 }
@@ -237,21 +245,16 @@ a > span{
 	cursor: default;
 }
 
-.tree a + a:hover{
+.tree a + a:hover,.tree span + a:hover{
 	cursor: pointer;
 }
 
-.tree a + a:hover,.tree a + a:focus,.tree a + a:active{
+.tree a + a:hover,.tree a + a:focus,.tree a + a:active,.tree span + a:hover,.tree span + a:focus,.tree span + a:active{
 	color: #5bc0de;
 	text-decoration: none;
 }
 
-
-
-
-
-
 #main{
-	background-color: red;
+	background-color: #fff;
 	min-height: 600px;
 }
