@@ -1,16 +1,9 @@
-define(["../jquery", "../bootstrap","../tree"], function($) {
+define(["../jquery","../tree","../setting"], function($,t,cfg) {
+
+		var res = cfg.getConfig("treeResource");
+
         $('.tree').TDMTree({
-            // 数据源
-            resource:'treeData.json'
+            resource:res
         });
        
-       /* return {
-            color: "blue",
-            size: "large",
-            addToCart: function() {
-                inventory.decrement(this);
-                cart.add(this);
-            }
-        }*/
-    }
-);
+    });

@@ -1,0 +1,9 @@
+{
+	"treeResource":"treeData.json",
+
+	"template":{
+		"baseUrl":"template/",
+
+		"pan":"x.html"
+	}
+}

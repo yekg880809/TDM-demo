@@ -254,7 +254,8 @@ a > span{
 	text-decoration: none;
 }
 
-#main{
-	background-color: #fff;
+#main-container{
 	min-height: 600px;
+	box-shadow: 2px 2px 4px #aaa;
+	border: 1px solid #eee;
 }
