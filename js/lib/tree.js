@@ -116,6 +116,13 @@
             var _obj = this.obj;
             $(_obj).find('ul li:last-child').addClass('last-child');
             return this;
+        },
+        preventLink:function(){
+            var _obj = this.obj;
+            $(_obj).find('span + a, a + a').on('click',function(e){
+                e.preventDefault();
+            });
+            return this;
         }
 
     }
@@ -123,13 +130,17 @@
     var methods = {
         init: function (options) {
             var defaults = {
-                resource:''
+                resource:'',
+                preventLink:false
                 },
                 tree = new Tree(this);
 
             var options = $.extend(defaults, options);
             return this.each(function() { 
                 tree.bind(_getResource(options.resource)).setIcons().forIE();
+                if(options.preventLink){
+                    tree.preventLink();
+                }
             });
         },
         add:function(options){
