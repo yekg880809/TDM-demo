@@ -1,11 +1,11 @@
 require.config({
 	baseUrl:'js/lib',
     paths: {
-    	// app url
-    	app: '../app',
+    	// ctrl url
+    	ctrl: '../ctrl',
 
-        //controller url
-        ctrl:'../ctrl',
+        //util url
+        util:'../util',
 
     	//config
     	setting:'../setting',
@@ -16,7 +16,8 @@ require.config({
         underscore: 'underscore-min',
 
         // plugins 
-        tree:'tree'
+        tree:'tree',
+        tab:'tabs'
     },
     shim: {
 
@@ -35,9 +36,13 @@ require.config({
 
 			'tree': {
 				deps: ['jquery','bootstrap']
-			}
+			},
+
+            'tab': {
+                deps: ['jquery','bootstrap']
+            },
 
 　　　　}
 });
  
-require(['app/screen','app/menu','app/tree','app/test']);
+require(['ctrl/screen','ctrl/menu','ctrl/tree','ctrl/tab']);

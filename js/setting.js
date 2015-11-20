@@ -1,19 +1,10 @@
-define(["jquery"],function($) {
-        var data = '';
-        $.ajax({ 
-            url: "../config.json",
-            type:'get',
-            async:false,
-            contentType: "application/json", 
-            dataType:'json',
-            success: function(result){
-                data = result;
-            }
-        });
+define(["jquery","util/accessUtil"],function($,acs) {
+
+        var cfg = acs.initConfig();
 
         return {
             getConfig:function(type){
-                return data[type];
+                return cfg[type];
             }
         }
-    });
+    })

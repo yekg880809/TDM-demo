@@ -1,4 +1,4 @@
-define(["../jquery","../tree","../setting"], function($,t,cfg) {
+define(["../jquery","../tree","../setting","util/dataUtil"], function($,t,cfg,data) {
 
 		var res = cfg.getConfig("treeResource");
 
@@ -6,5 +6,7 @@ define(["../jquery","../tree","../setting"], function($,t,cfg) {
             resource:res,
             preventLink:true
         });
+
+
        
     });
