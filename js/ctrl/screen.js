@@ -39,7 +39,14 @@ define(["../jquery", "../bootstrap"], function($) {
         });
 
         ctrlBtnContainer.on('click','ul a',function(e){
-            changeView($(e.target),curView);
+            var _obj = e.target;
+            if(_obj.tagName == 'SPAN'){
+                _obj = $(e.target).closest('a');
+            }
+
+            console.log(_obj.html());
+
+            changeView(_obj,curView);
         });
 
         function resizeView(ctrl,curView){
@@ -51,29 +58,29 @@ define(["../jquery", "../bootstrap"], function($) {
             if(curView == ctrl.data('view')){
                 return;
             }else if(viewSize.getTreeSize(ctrl.data('view')) == ''){
-                views.getView('ctnt').hide('fast');
-                views.getView('tree').show('slow');
+                views.getView('ctnt').hide();
+                views.getView('tree').show();
                 resizeView(ctrl,curView);
                 views.getView('tree').removeClass(styles.bigTree);
                 views.getView('tree').find('.'+styles.btnGroup).addClass(styles.btnJust);
                 views.getView('tree').hide();
-                views.getView('ctnt').show('slow');
+                views.getView('ctnt').show();
             }else if(viewSize.getCtntSize(ctrl.data('view')) == ''){
                 views.getView('tree').hide();
-                views.getView('ctnt').show('slow');
+                views.getView('ctnt').show();
                 resizeView(ctrl,curView);
                 views.getView('tree').addClass(styles.bigTree);
                 views.getView('tree').find('.'+styles.btnGroup).removeClass(styles.btnJust);
-                views.getView('tree').show('slow');
+                views.getView('tree').show();
                 views.getView('ctnt').hide();
             }else{
-                views.getView('tree').hide('fast');
-                views.getView('ctnt').hide('fast');
+                views.getView('tree').hide();
+                views.getView('ctnt').hide();
                 resizeView(ctrl,curView);
                 views.getView('tree').removeClass(styles.bigTree);
                 views.getView('tree').find('.'+styles.btnGroup).addClass(styles.btnJust);
-                views.getView('tree').show('slow');
-                views.getView('ctnt').show('slow');
+                views.getView('tree').show();
+                views.getView('ctnt').show();
             }
 
             ctrl.find('span').removeClass(icons.unchecked).addClass(icons.ichecked);
