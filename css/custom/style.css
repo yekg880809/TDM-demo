@@ -222,6 +222,10 @@ a > span{
 	margin-right: 10px;
 }
 
+.tree span > a > span{
+	padding-right:3px; 
+}
+
 .tree ul > span,.tree li > span{
 	//background-color: #d0d8de;
 	color: #555;
@@ -262,10 +266,13 @@ a > span{
 }
 
 #template-container{
+	position: relative;
+	height: 100%;
 }
 
 .nav-mode{
 	margin-bottom: 20px;
+	height: 50%;
 }
 
 
