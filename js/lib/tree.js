@@ -99,14 +99,25 @@
                     closed:'glyphicon-folder-close'
                 },
                 _obj = this.obj;
-            $(_obj).on('click','span span',function(e){
-                var t = $(e.target).closest('li').children('ul');
+
+            $(_obj).on('click','span a',function(e){
+
+                var _targt = {};                
+                if(e.target.tagName == 'A' && $(e.target).has('span')){
+                    _targt = $(e.target).children('span');
+                }else if(e.target.tagName == 'SPAN'){
+                    _targt = $(e.target);
+                }else{
+                    return;
+                }
+
+                var t = _targt.closest('li').children('ul');
                 if(t.hasClass('collapse') && t.hasClass('in')){
-                    $(this).removeClass(icons.opened);
-                    $(this).addClass(icons.closed);
+                    _targt.removeClass(icons.opened);
+                    _targt.addClass(icons.closed);
                 }else if(t.hasClass('collapse')){
-                    $(this).removeClass(icons.closed);
-                    $(this).addClass(icons.opened);
+                    _targt.removeClass(icons.closed);
+                    _targt.addClass(icons.opened);
                 }
                 
             });
