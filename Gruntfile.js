@@ -50,7 +50,8 @@ module.exports = function(grunt){
 	        files: [  //下面文件的改变就会实时刷新网页
 	          '*.html',
 	          'css/{,*/}*.css',
-	          'js/{,*/}*.js'
+	          'js/{,*/}*.js',
+	          'template/*.html'
 	        ]
 	    }
 	}

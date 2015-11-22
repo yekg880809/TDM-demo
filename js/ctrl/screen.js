@@ -1,4 +1,4 @@
-define(["../jquery", "../bootstrap"], function($) {
+define(["../jquery", "../bootstrap","ctrl/mainMenu"], function($) {
         
         var ctrlBtn = $('#view-resize'),
             ctrlBtnContainer = ctrlBtn.closest('li'),
@@ -39,8 +39,10 @@ define(["../jquery", "../bootstrap"], function($) {
         });
 
         ctrlBtnContainer.on('click','ul a',function(e){
-            var _obj = e.target;
-            if(_obj.tagName == 'SPAN'){
+            var _obj = {};                
+            if(e.target.tagName == 'A'){
+                _obj = $(e.target);
+            }else if(e.target.tagName == 'SPAN'){
                 _obj = $(e.target).closest('a');
             }
 

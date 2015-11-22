@@ -1,6 +1,6 @@
 define(["../jquery","util/templateUtil","util/dataUtil",'../tab'], function($,_temp,data,tab) {
 		var obj = $('#template-container'),
-		    template = 'tab',
+		    template = 'tab.html',
 		    data = {
 		    	name: 'ttt'
 		    };

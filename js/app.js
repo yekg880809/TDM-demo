@@ -45,4 +45,4 @@ require.config({
 　　　　}
 });
  
-require(['ctrl/screen','ctrl/menu','ctrl/tree','ctrl/tab']);
+require(['ctrl/mainMenu','ctrl/screen','ctrl/menu','ctrl/tree','ctrl/tab']);

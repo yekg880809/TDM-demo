@@ -2,8 +2,6 @@
 	"treeResource":"testData/treeData.json",
 
 	"template":{
-		"baseUrl":"template/",
-
-		"tab":"tab.html"
+		"baseUrl":"template/"
 	}
 }
