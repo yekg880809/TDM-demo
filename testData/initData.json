@@ -1,12 +1,391 @@
 {
-	"navMenu":{
-		"list":[
-			{"name":"aaaaaa"},
-			{"name":"bbbbbb"},
-			{"name":"bbbbbb"},
-			{"name":"cccccc"},
-			{"name":"cccccc"},
-			{"name":"eeeeee"}
+	"navMenu": {
+		"list": [
+			{"name":"home","type":"home"},
+			{"name":"team","type":"team"},
+			{"name":"vbom","type":"vbom"},
+			{"name":"setting","type":"setting"},
+			{"name":"qq","type":"qq"},
+			{"name":"wechat","type":"wechat"}
 		]
-	}
+	},
+
+	"home": {
+		"class1": [
+			{
+				"name": "home1",
+				"menuId": "home1",
+				"childmenu": [
+					{
+						"name": "home11",
+						"menuId": "home11",
+						"childmenu": [
+							{
+								"name": "home111",
+								"url": "home111"
+							},
+							{
+								"name": "home111",
+								"url": "home111"
+							},
+							{
+								"name": "home111",
+								"url": "home111"
+							}
+						]
+					},
+					{
+						"name": "home12",
+						"menuId": "home12",
+						"childmenu": [
+							{
+								"name": "home111",
+								"url": "home111"
+							},
+							{
+								"name": "home111",
+								"url": "home111"
+							},
+							{
+								"name": "home111",
+								"url": "home111"
+							}
+						]
+					},
+					{
+						"name": "home13",
+						"menuId": "home13",
+						"childmenu": [
+							{
+								"name": "home111",
+								"url": "home111"
+							},
+							{
+								"name": "home111",
+								"url": "home111"
+							},
+							{
+								"name": "home111",
+								"url": "home111"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "home2",
+				"menuId": "home2",
+				"childmenu": [
+					{
+						"name": "home21",
+						"menuId": "home21",
+						"childmenu": [
+							{
+								"name": "home211",
+								"url": "home211"
+							},
+							{
+								"name": "home212",
+								"url": "home212"
+							},
+							{
+								"name": "home213",
+								"url": "home213"
+							}
+						]
+					},
+					{
+						"name": "home22",
+						"menuId": "home22",
+						"childmenu": [
+							{
+								"name": "home221",
+								"url": "home221"
+							},
+							{
+								"name": "home222",
+								"url": "home222"
+							},
+							{
+								"name": "home223",
+								"url": "home223"
+							}
+						]
+					},
+					{
+						"name": "home23",
+						"menuId": "home23",
+						"childmenu": [
+							{
+								"name": "home231",
+								"url": "home231"
+							},
+							{
+								"name": "home232",
+								"url": "home232"
+							},
+							{
+								"name": "home233",
+								"url": "home233"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "home3",
+				"menuId": "home3",
+				"childmenu": [
+					{
+						"name": "home31",
+						"menuId": "home31",
+						"childmenu": [
+							{
+								"name": "home311",
+								"url": "home311"
+							},
+							{
+								"name": "home312",
+								"url": "home312"
+							},
+							{
+								"name": "home313",
+								"url": "home313"
+							}
+						]
+					},
+					{
+						"name": "home32",
+						"menuId": "home32",
+						"childmenu": [
+							{
+								"name": "home321",
+								"url": "home321"
+							},
+							{
+								"name": "home322",
+								"url": "home322"
+							},
+							{
+								"name": "home323",
+								"url": "home323"
+							}
+						]
+					},
+					{
+						"name": "home33",
+						"menuId": "home33",
+						"childmenu": [
+							{
+								"name": "home331",
+								"url": "home331"
+							},
+							{
+								"name": "home332",
+								"url": "home332"
+							},
+							{
+								"name": "home333",
+								"url": "home333"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+
+	"team":{
+		"class1": [
+			{
+				"name": "team1",
+				"menuId": "team1",
+				"childmenu": [
+					{
+						"name": "team11",
+						"menuId": "team11",
+						"childmenu": [
+							{
+								"name": "team111",
+								"url": "team111"
+							},
+							{
+								"name": "team111",
+								"url": "team111"
+							},
+							{
+								"name": "team111",
+								"url": "team111"
+							}
+						]
+					},
+					{
+						"name": "team12",
+						"menuId": "team12",
+						"childmenu": [
+							{
+								"name": "team111",
+								"url": "team111"
+							},
+							{
+								"name": "team111",
+								"url": "team111"
+							},
+							{
+								"name": "team111",
+								"url": "team111"
+							}
+						]
+					},
+					{
+						"name": "team13",
+						"menuId": "team13",
+						"childmenu": [
+							{
+								"name": "team111",
+								"url": "team111"
+							},
+							{
+								"name": "team111",
+								"url": "team111"
+							},
+							{
+								"name": "team111",
+								"url": "team111"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "team2",
+				"menuId": "team2",
+				"childmenu": [
+					{
+						"name": "team21",
+						"menuId": "team21",
+						"childmenu": [
+							{
+								"name": "team211",
+								"url": "team211"
+							},
+							{
+								"name": "team212",
+								"url": "team212"
+							},
+							{
+								"name": "team213",
+								"url": "team213"
+							}
+						]
+					},
+					{
+						"name": "team22",
+						"menuId": "team22",
+						"childmenu": [
+							{
+								"name": "team221",
+								"url": "team221"
+							},
+							{
+								"name": "team222",
+								"url": "team222"
+							},
+							{
+								"name": "team223",
+								"url": "team223"
+							}
+						]
+					},
+					{
+						"name": "team23",
+						"menuId": "team23",
+						"childmenu": [
+							{
+								"name": "team231",
+								"url": "team231"
+							},
+							{
+								"name": "team232",
+								"url": "team232"
+							},
+							{
+								"name": "team233",
+								"url": "team233"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "team3",
+				"menuId": "team3",
+				"childmenu": [
+					{
+						"name": "team31",
+						"menuId": "team31",
+						"childmenu": [
+							{
+								"name": "team311",
+								"url": "team311"
+							},
+							{
+								"name": "team312",
+								"url": "team312"
+							},
+							{
+								"name": "team313",
+								"url": "team313"
+							}
+						]
+					},
+					{
+						"name": "team32",
+						"menuId": "team32",
+						"childmenu": [
+							{
+								"name": "team321",
+								"url": "team321"
+							},
+							{
+								"name": "team322",
+								"url": "team322"
+							},
+							{
+								"name": "team323",
+								"url": "team323"
+							}
+						]
+					},
+					{
+						"name": "team33",
+						"menuId": "team33",
+						"childmenu": [
+							{
+								"name": "team331",
+								"url": "team331"
+							},
+							{
+								"name": "team332",
+								"url": "team332"
+							},
+							{
+								"name": "team333",
+								"url": "team333"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+
+	"vbom":{},
+
+	"setting":{},
+
+	"qq":{},
+
+	"wechat":{}
+	
 }

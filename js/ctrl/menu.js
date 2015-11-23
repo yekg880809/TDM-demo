@@ -1,4 +1,4 @@
-define(["../jquery", "../bootstrap"], function($) {
+define(["../jquery", "../bootstrap","ctrl/mainMenu"], function($) {
         
         var cls1m = $('#class1-menu'),
             cls2m = $('.class2-menu'),

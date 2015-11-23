@@ -25,22 +25,14 @@ require.config({
     },
     shim: {
 
-　　　　　　'jquery':{
-　　　　　　　　exports: '$'
-　　　　　　},
+            'bootstrap': {
+            deps: ['jquery'],
+                exports: '_b'
+            },
 
-			'underscore':{
-　　　　　　　　exports: '_'
-　　　　　　},
-
-　　　　　　'bootstrap': {
-　　　　　　　　deps: ['jquery'],
-　　　　　　　　exports: '_b'
-　　　　　　},
-
-			'tree': {
-				deps: ['jquery','bootstrap']
-			},
+            'tree': {
+            	deps: ['jquery','bootstrap']
+            },
 
             'tab': {
                 deps: ['jquery','bootstrap']

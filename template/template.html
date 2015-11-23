@@ -22,7 +22,7 @@
 	    </ul>
 	    <ul class="nav navbar-nav navbar-right" id="sys-work-menu" style="display:none;">
 	    	{{#list}}
-	    		<li><a href="#">{{name}}</a></li>
+	    		<li><a href="{{type}}">{{name}}</a></li>
 	    	{{/list}}
 	    </ul>
 	</div><!--.header-menu end-->
@@ -51,5 +51,37 @@
 		 		faaaaaaaaaaaaaaaa
 		 	</div>
 		 </div>
-	 </div>
+	</div>
+
+	<div id="menu">
+		<ul class="nav nav-stacked aside" id="aside" role="tablist" aria-multiselectable="true">
+            <ul role="presentation" class="nav nav-stacked collapse" id="rtn-main">
+              <li role="presentation">
+              	<a data-toggle="collapse" href="class1-menu">
+              		<span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+              		<span id="rtn-title">返回</span>
+              	</a>
+              </li>
+            </ul>
+            <ul id="class1-menu" class="nav nav-stacked aside-menu collapse in">
+            	{{#class1}}
+              		<li role="presentation"><a data-toggle="collapse" href="#{{menuId}}">{{name}}</a></li>
+            	{{/class1}}
+            </ul>
+
+            <ul class="nav nav-stacked aside-menu collapse class2-menu" id="main1-menu">
+				<li class="menu-title" role="presentation">
+					<a><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>main1</a>
+				</li>
+				<li role="presentation">
+                <a data-toggle="collapse" data-parent="#main1-menu" href="#xx1">Messages</a>
+                <div id="xx1" class="collapse list-group in">
+                  <a href='#' class="list-group-item">
+                    a
+                  </a>
+                </div>
+              </li>           
+            </ul> 
+        </ul><!--#aside end-->
+	</div>
 </div>
