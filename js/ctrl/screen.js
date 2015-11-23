@@ -46,8 +46,6 @@ define(["../jquery", "../bootstrap","ctrl/mainMenu"], function($) {
                 _obj = $(e.target).closest('a');
             }
 
-            console.log(_obj.html());
-
             changeView(_obj,curView);
         });
 

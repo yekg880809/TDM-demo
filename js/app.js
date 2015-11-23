@@ -1,23 +1,27 @@
 require.config({
-	baseUrl:'js/lib',
+	baseUrl:'js',
     paths: {
+        // lib url
+        lib: 'lib',
+
     	// ctrl url
-    	ctrl: '../ctrl',
+    	ctrl: 'ctrl',
 
         //util url
-        util:'../util',
+        util: 'util',
 
     	//config
-    	setting:'../setting',
+    	setting:'setting',
 
     	// lib files
-        jquery: 'jquery-1.9.1.min',
-        bootstrap: 'bootstrap.min',
-        underscore: 'underscore-min',
+        jquery: 'lib/jquery-1.9.1.min',
+        bootstrap: 'lib/bootstrap.min',
+        underscore: 'lib/underscore-min',
+        mustache: 'lib/mustache.min',
 
         // plugins 
-        tree:'tree',
-        tab:'tabs'
+        tree:'lib/tree',
+        tab:'lib/tabs'
     },
     shim: {
 

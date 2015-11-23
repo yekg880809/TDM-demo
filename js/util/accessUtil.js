@@ -1,4 +1,4 @@
-define(["../jquery"], function($) {
+define(["../jquery","setting"], function($) {
         
         return{
         	initConfig:function(){
@@ -28,8 +28,19 @@ define(["../jquery"], function($) {
 		        });
 		        return data;
         	},
-        	accessData:function(){
-
+        	accessData:function(url){
+        		var data ='';
+        		$.ajax({ 
+		            url: url,
+		            type:'get',
+		            async:false,
+		            contentType: "application/json", 
+		            dataType:'json',
+		            success: function(result){
+		                data = result;
+		            }
+		        });
+		        return data;
         	}
         }
 

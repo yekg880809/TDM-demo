@@ -165,25 +165,29 @@ a > span{
 } 
 
 .tree ul li:before {
-    border-left:1px dashed #0d394f;
-    width:1px;
-    height: 100%;
+    border-left: 1px solid #0d394f;
+    width: 1px;
+    height: 225%;
+    height: 100%\0;
     left: -10px;
-    top: -12px;
+    top: -7px;
+    top: -10px\0;
     width: 1px;
 }
 
 .big-tree .tree ul li:before {
-    border-left:1px dashed #0d394f;
+    border-left:1px solid #0d394f;
     width:1px;
     height: 348%;
+    height: 348%\0;
     left: -10px;
     top: -20px;
+    top: -22px\0;
     width: 1px;
 }
 
 .tree li:after {
-    border-top:1px dashed #0d394f;
+    border-top:1px solid #0d394f;
     height: 20px;
     left: -10px;
     top: 7px;
@@ -201,14 +205,16 @@ a > span{
 }
 
 .tree ul > li + li:before{
-	height: 130%;
+	height: 125%;
+	height: 130%\0;
     left: -10px;
     top: -24px;
+    top: -30px\0;
     width: 1px;
 }
 
 .big-tree .tree ul > li + li:before{
-	height: 137%;
+	height: 139%;
     left: -10px;
     top: -50px;
     width: 1px;
@@ -233,12 +239,13 @@ a > span{
 
 .tree ul li.last-child:before{
 	height: 70px;
+	height: 70px\0;
 	top:-63px;
 }
 
 .big-tree .tree ul li.last-child:before{
-	height: 132px;
-	top:-124px;
+	height: 122px;
+	top:-114px;
 }
 
 .tree a{
