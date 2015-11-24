@@ -11,7 +11,7 @@ require.config({
         util: 'util',
 
     	//config
-    	setting:'setting',
+    	setting: 'setting',
 
     	// lib files
         jquery: 'lib/jquery-1.9.1.min',
@@ -19,15 +19,20 @@ require.config({
         underscore: 'lib/underscore-min',
         mustache: 'lib/mustache.min',
 
-        // plugins 
-        tree:'lib/tree',
-        tab:'lib/tabs'
+        // model 
+        tree: 'model/tree',
+        tab: 'model/tabs',
+        menu: 'model/menu'
     },
     shim: {
 
             'bootstrap': {
-            deps: ['jquery'],
+                deps: ['jquery'],
                 exports: '_b'
+            },
+
+            'menu': {
+                deps: ['jquery','bootstrap']
             },
 
             'tree': {
@@ -36,9 +41,8 @@ require.config({
 
             'tab': {
                 deps: ['jquery','bootstrap']
-            },
-
+            }
 　　　　}
 });
  
-require(['ctrl/mainMenu','ctrl/screen','ctrl/menu','ctrl/tree','ctrl/tab']);
+require(['ctrl/mainMenu','ctrl/screen','ctrl/tree','ctrl/tab']);

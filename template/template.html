@@ -1,13 +1,13 @@
 <div id='root'>
 	<div id="nav-ctrl">
 		<ul class="nav navbar-nav">
-			<li><a href="#sys-work-menu"><span class="glyphicon glyphicon-list"></span>菜单</a></li>
-			<li style="display:none;"><a href="#setting"><span class="glyphicon glyphicon-cog"></span>设置</a></li>
+			<li style="display:none;"><a href="#sys-work-menu"><span class="glyphicon glyphicon-list"></span>菜单</a></li>
+			<li><a href="#setting"><span class="glyphicon glyphicon-cog"></span>设置</a></li>
 		</ul>
 	</div><!--.header-menu end-->
 
 	<div id="nav-menu">
-	    <ul class="nav navbar-nav navbar-right" id="setting">
+	    <ul class="nav navbar-nav navbar-right" id="setting" style="display:none;">
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" id="view-resize" data-cur-view="reset" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>视口 <span class="caret"></span></a>
 				<ul class="dropdown-menu">
@@ -20,14 +20,14 @@
 			</li>
 			<li><a href="#">退出登录</a></li>
 	    </ul>
-	    <ul class="nav navbar-nav navbar-right" id="sys-work-menu" style="display:none;">
+	    <ul class="nav navbar-nav navbar-right" id="sys-work-menu">
 	    	{{#list}}
 	    		<li><a href="{{type}}">{{name}}</a></li>
 	    	{{/list}}
 	    </ul>
 	</div><!--.header-menu end-->
 
-	<div id="template-container">
+	<div id="work-area">
 		<div id="mode1" class="nav-mode">
 			<div class="data-container">
 				aaaaaaaaaaaaaaaa
@@ -68,20 +68,25 @@
               		<li role="presentation"><a data-toggle="collapse" href="#{{menuId}}">{{name}}</a></li>
             	{{/class1}}
             </ul>
-
-            <ul class="nav nav-stacked aside-menu collapse class2-menu" id="main1-menu">
+			{{#class1}}
+            <ul class="nav nav-stacked aside-menu collapse class2-menu" id="{{menuId}}">
 				<li class="menu-title" role="presentation">
-					<a><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>main1</a>
+					<a><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>{{name}}</a>
 				</li>
+				{{#childmenu}}
 				<li role="presentation">
-                <a data-toggle="collapse" data-parent="#main1-menu" href="#xx1">Messages</a>
-                <div id="xx1" class="collapse list-group in">
-                  <a href='#' class="list-group-item">
-                    a
-                  </a>
-                </div>
-              </li>           
-            </ul> 
+	                <a data-toggle="collapse" href="#{{menuId}}">{{name}}</a>
+	                <div id="{{menuId}}" class="collapse list-group">
+						{{#childmenu}}
+						<a href='{{url}}' class="list-group-item">
+						{{name}}
+						</a>
+						{{/childmenu}}
+	                </div>
+	            </li>
+	            {{/childmenu}}           
+            </ul>
+            {{/class1}} 
         </ul><!--#aside end-->
 	</div>
 </div>

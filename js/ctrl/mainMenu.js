@@ -1,7 +1,8 @@
-define(["../jquery","util/objUtil"], function($,objUtil) {
+define(["../jquery","util/objUtil","../menu"], function($,objUtil) {
             
       var   ctrl = objUtil.create($('#nav-ctrl')),
-            menu = objUtil.create($('#nav-menu'));
+            menu = objUtil.create($('#nav-menu')),
+            list = {};
 
       var   stinM = menu.find('#setting'),
             workM = menu.find('#sys-work-menu');
@@ -22,12 +23,15 @@ define(["../jquery","util/objUtil"], function($,objUtil) {
             ctrl.find('li').eq(0).show();
       });
 
+      list = objUtil.create($('#menu'),'home');
+      $(list).menu();
+
       workM.on('click','a',function(e){
          e.preventDefault();
-         var id = $(this).attr('href'),
-           menu = objUtil.create($('#menu'),id);
+         var id = $(this).attr('href');
+         list = objUtil.create($('#menu'),id);
+         $(list).menu();
       });
+         
 
-
-    
 });

@@ -148,10 +148,14 @@
 
             var options = $.extend(defaults, options);
             return this.each(function() { 
-                tree.bind(_getResource(options.resource)).setIcons().forIE();
-                if(options.preventLink){
-                    tree.preventLink();
-                }
+                if (typeof options.datas !== 'undefined') {
+                    tree.bind(options.datas).setIcons().forIE();
+                }else if (typeof options.resource !== 'undefined') {
+                    tree.bind(_getResource(options.resource)).setIcons().forIE();
+                };
+                
+                options.preventLink && tree.preventLink();
+                
             });
         },
         add:function(options){
@@ -161,8 +165,8 @@
         }
     };
 
-    $.fn.TDMTree = function(){
-        debug(this);  
+    $.fn.tree = function(){
+        // debug(this);  
         $this = $(this);
 
         var method = arguments[0];

@@ -1,9 +1,12 @@
-define(["../jquery","../tree","../setting","util/dataUtil"], function($,t,cfg,data) {
+define(["../jquery","../tree","util/objUtil"], function($,_tree,objUtil) {
 
-		var res = cfg.getConfig("treeResource");
+		// var res = cfg.getConfig("treeResource");
 
-        $('.tree').TDMTree({
-            resource:res,
+		var data = objUtil.create($('.tree'));
+
+        $('.tree').tree({
+        	datas:data,
+            // resource:data,
             preventLink:true
         });
 

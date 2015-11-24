@@ -1,4 +1,4 @@
-(function($) {  
+;(function($) {  
 	function debug($obj){
 		if(window.console && window.console.log){  
 			window.console.log($obj);  
@@ -72,9 +72,7 @@
             return this.each(function() { 
             	var tab = new Tabs(this,options);
 
-            	if(options.justified){
-            		tab.addJust();
-            	}
+            	options.justified && tab.addJust();
                 
             });
         },
@@ -86,7 +84,7 @@
     };
 	
 	$.fn.tabs = function(options) { 
-		debug(this);  
+		// debug(this);  
         $this = $(this);
 
         var method = arguments[0];
