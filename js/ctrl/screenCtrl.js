@@ -1,4 +1,4 @@
-define(["../jquery", "../bootstrap","ctrl/mainMenu"], function($) {
+define(["jquery", "bootstrap","menuCtrl"], function($) {
         
     var ctrlBtn = $('#view-resize'),
         ctrlBtnContainer = ctrlBtn.closest('li'),

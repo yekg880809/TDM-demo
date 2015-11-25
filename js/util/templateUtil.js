@@ -1,4 +1,4 @@
-define(["../jquery", "../setting","util/accessUtil",'../mustache'], function($,cfg,acs,mustache) {
+define(["jquery", "setting","accessUtil",'mustache'], function($,cfg,acs,mustache) {
 
         var _t = cfg.getConfig('template');
 

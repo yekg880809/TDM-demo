@@ -1,4 +1,4 @@
-define(["jquery","util/accessUtil"],function($,acs) {
+define(["jquery","accessUtil"],function($,acs) {
 
         var cfg = acs.initConfig();
 

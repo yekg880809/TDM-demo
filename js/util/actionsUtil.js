@@ -1,4 +1,4 @@
-define(["../jquery", "../underscore","../setting"], function($,_,cfg) {
+define(["jquery", "underscore","setting"], function($,_,cfg) {
         
         return;
 

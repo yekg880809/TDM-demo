@@ -1,4 +1,4 @@
-define(["../jquery","setting"], function($) {
+define(["jquery","setting"], function($) {
         
         return{
         	initConfig:function(){

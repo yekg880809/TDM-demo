@@ -1,4 +1,4 @@
-define(["../jquery","util/objUtil","../tab"], function($,objUtil,_tab) {
+define(["jquery","objUtil","tab"], function($,objUtil,_tab) {
 
 		var tabs = objUtil.create($('#work-area'));
 

@@ -1,4 +1,4 @@
-define(["../jquery","../tree","util/objUtil"], function($,_tree,objUtil) {
+define(["jquery","tree","objUtil"], function($,_tree,objUtil) {
 
 		// var res = cfg.getConfig("treeResource");
 

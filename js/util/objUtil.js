@@ -1,4 +1,4 @@
-define(["../jquery","util/templateUtil","util/dataUtil","util/charUtil"], function($,_temp,_data,_char) {
+define(["jquery","templateUtil","dataUtil","charUtil"], function($,_temp,_data,_char) {
         
         var data = _data.getInitData();
 

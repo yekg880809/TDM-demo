@@ -1,4 +1,4 @@
-define(["../jquery","util/accessUtil","setting"], function($,acs,cfg) {
+define(["jquery","accessUtil","setting"], function($,acs,cfg) {
         
         
         function _dataInit(){

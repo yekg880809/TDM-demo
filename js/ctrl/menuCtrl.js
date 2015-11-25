@@ -1,4 +1,4 @@
-define(["../jquery","util/objUtil","../menu"], function($,objUtil) {
+define(["jquery","objUtil","menu"], function($,objUtil) {
             
       var   ctrl = objUtil.create($('#nav-ctrl')),
             menu = objUtil.create($('#nav-menu')),

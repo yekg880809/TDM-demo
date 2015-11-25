@@ -1,15 +1,6 @@
 require.config({
 	baseUrl:'js',
     paths: {
-        // lib url
-        lib: 'lib',
-
-    	// ctrl url
-    	ctrl: 'ctrl',
-
-        //util url
-        util: 'util',
-
     	//config
     	setting: 'setting',
 
@@ -19,10 +10,23 @@ require.config({
         underscore: 'lib/underscore-min',
         mustache: 'lib/mustache.min',
 
-        // model 
+        // models 
         tree: 'model/tree',
         tab: 'model/tabs',
-        menu: 'model/menu'
+        menu: 'model/menu',
+
+        // utils 
+        accessUtil: 'util/accessUtil',
+        charUtil: 'util/charUtil',
+        dataUtil: 'util/dataUtil',
+        objUtil: 'util/objUtil',
+        templateUtil: 'util/templateUtil',
+
+        // ctrls 
+        menuCtrl: 'ctrl/menuCtrl',
+        screenCtrl: 'ctrl/screenCtrl',
+        tabCtrl: 'ctrl/tabCtrl',
+        treeCtrl: 'ctrl/treeCtrl'
     },
     shim: {
 
@@ -45,4 +49,4 @@ require.config({
 　　　　}
 });
  
-require(['ctrl/mainMenu','ctrl/screen','ctrl/tree','ctrl/tab']);
+require(['menuCtrl','screenCtrl','tabCtrl','treeCtrl']);
