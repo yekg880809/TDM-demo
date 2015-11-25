@@ -45,7 +45,7 @@
 
     Tree.prototype = {
         constructor:Tree,
-        bind:function(resource,type){
+        bind: function(resource,type){
             var _obj = this.obj,
                 root = resource,
                 list = [],
@@ -93,7 +93,7 @@
             
             return this;
         },
-        setIcons:function(){
+        setIcons: function(){
             var icons = {
                     opened:'glyphicon-folder-open',
                     closed:'glyphicon-folder-close'
@@ -123,12 +123,12 @@
             });
             return this;
         },
-        forIE:function(){
+        forIE: function(){
             var _obj = this.obj;
             $(_obj).find('ul li:last-child').addClass('last-child');
             return this;
         },
-        preventLink:function(){
+        preventLink: function(){
             var _obj = this.obj;
             $(_obj).find('span + a, a + a').on('click',function(e){
                 e.preventDefault();
@@ -156,11 +156,6 @@
                 
                 options.preventLink && tree.preventLink();
                 
-            });
-        },
-        add:function(options){
-            return this.each(function() { 
-                alert('add');
             });
         }
     };

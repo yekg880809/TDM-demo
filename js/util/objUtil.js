@@ -1,39 +1,39 @@
-define(["jquery","templateUtil","dataUtil","charUtil"], function($,_temp,_data,_char) {
+define(["jquery","templateUtil","dataUtil","charUtil","logUtil"], function($,templateUtil,dataUtil,charUtil,logUtil) {
         
-        var data = _data.getInitData();
-
-        function debug($obj){
-            if(window.console && window.console.log){  
-                window.console.log($obj);  
-            }  
-        }; 
+        var data = dataUtil.getInitData();
         
         return {
         	create:function(obj){
                 var _id = obj.attr('id'),
                     _data = obj.data('type'),
                     key = typeof _id == 'undefined'?_data:_id,
-                    dataKey = _char.toHumpType(key),
+                    dataKey = charUtil.toHumpType(key),
         		    datas = {};
 
 
                 if (obj.data('onlyData')) {
-                    debug("objUtil: "+ key +" get only data");
+                    logUtil.log("objUtil: "+ key +" get only data");
                     return data[dataKey];
                 };
 
                 if (typeof arguments[1] !== "undefined"){
-                    dataKey = _char.toHumpType(arguments[1]);
-                    debug("objUtil: dataType'"+ key +"' bind with data "+ dataKey +"");
-                    return _temp.bind(obj,data[dataKey]);
+                    var isString = typeof arguments[1] === 'string',
+                        isObj = typeof arguments[1] === 'object'
+                    if(isString){
+                        dataKey = charUtil.toHumpType(arguments[1]);
+                        logUtil.log("objUtil: dataType'"+ key +"' bind with data "+ dataKey +"");
+                        return templateUtil.bind(obj,data[dataKey]); 
+                    }else if(isObj){
+                        alert('obj');
+                    }
                 }
         		    
     		    if (typeof data[dataKey] === 'object') {
-                    debug("objUtil: #"+ key +" bind with data "+ dataKey +"");
+                    logUtil.log("objUtil: #"+ key +" bind with data "+ dataKey +"");
 					datas = data[dataKey];
     		    };
 
-        		return _temp.bind(obj,datas);
+        		return templateUtil.bind(obj,datas);
         	}
         };
 

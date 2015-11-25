@@ -21,6 +21,7 @@ require.config({
         dataUtil: 'util/dataUtil',
         objUtil: 'util/objUtil',
         templateUtil: 'util/templateUtil',
+        logUtil: 'util/logUtil',
 
         // ctrls 
         menuCtrl: 'ctrl/menuCtrl',
@@ -49,4 +50,4 @@ require.config({
 　　　　}
 });
  
-require(['menuCtrl','screenCtrl','tabCtrl','treeCtrl']);
+require(['templateUtil','menuCtrl','screenCtrl','tabCtrl','treeCtrl']);

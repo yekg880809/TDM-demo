@@ -1,8 +1,8 @@
-define(["jquery","accessUtil","setting"], function($,acs,cfg) {
+define(["jquery","accessUtil","setting"], function($,accessUtil,cfg) {
         
         
         function _dataInit(){
-        	return acs.accessData(cfg.getConfig('initdata'));
+        	return accessUtil.accessData(cfg.getConfig('initdata'));
         }
 
         return {
