@@ -1,7 +1,17 @@
 define(["jquery","objUtil","menu"], function($,objUtil) {
             
-      var   ctrl = objUtil.create($('#nav-ctrl')),
-            menu = objUtil.create($('#nav-menu')),
+      var   ctrl = objUtil.create({
+                     block:$('#nav-ctrl'),
+                     tempId:'',
+                     dataId:'',
+                     onlyData:false
+                  }),
+            menu = objUtil.create({
+                     block:$('#nav-menu'),
+                     tempId:'nav-menu',
+                     dataId:'nav-menu',
+                     onlyData:false
+                  }),
             list = {};
 
       var   stinM = menu.find('#setting'),
@@ -23,13 +33,19 @@ define(["jquery","objUtil","menu"], function($,objUtil) {
             ctrl.find('li').eq(0).show();
       });
 
-      list = objUtil.create($('#menu'),'home');
+      list = objUtil.create({
+               block:$('#menu'),
+               dataId:'home'
+            });
       $(list).menu();
 
       workM.on('click','a',function(e){
          e.preventDefault();
          var id = $(this).attr('href');
-         list = objUtil.create($('#menu'),id);
+         list = objUtil.create({
+                  block:$('#menu'),
+                  dataId:id
+               });
          $(list).menu();
       });
          

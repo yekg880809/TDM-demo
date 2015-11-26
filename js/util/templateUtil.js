@@ -1,23 +1,23 @@
 define(["jquery", "setting","accessUtil",'mustache','logUtil'], function($,cfg,accessUtil,mustache,logUtil) {
 
-        var _t = cfg.getConfig('template'),
-            _temp =  accessUtil.initTemplate(_t.baseUrl);   
-        
-        return {
-            bind:function(obj,datas){
+    var _t = cfg.getConfig('template'),
+        _temp =  accessUtil.initTemplate(_t.baseUrl);   
+    
+    return {
+        bind:function(obj,tempId,datas){
 
-                var temp = $(_temp).find('#'+$(obj).attr('id')).html();
-                logUtil.log(temp);
-                obj.html(mustache.render(temp,datas));
+            var temp = $(_temp).find('#'+tempId).html();
 
-                if (typeof arguments[3] === 'function') {
-                    arguments[3]();
-                };
+            obj.html(mustache.render(temp,datas));
 
-                return obj;
+            if (typeof arguments[3] === 'function') {
+                arguments[3]();
+            };
 
-            }
+            return obj;
+
         }
+    }
 
-       
-    });
+   
+});

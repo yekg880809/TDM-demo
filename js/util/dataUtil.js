@@ -6,8 +6,11 @@ define(["jquery","accessUtil","setting"], function($,accessUtil,cfg) {
         }
 
         return {
-        	getInitData:function(){
+        	getInitData: function(){
         		return _dataInit();
+        	},
+        	getData: function(){
+
         	}
         };
 
