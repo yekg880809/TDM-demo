@@ -85,8 +85,12 @@
 }
 
 .tree ul > span ,.tree ul li > span{
-    padding: 2px 4px;
+    padding: 6px 8px;
     border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #555;
+
 } 
 
 .big-tree .tree ul > span ,.big-tree .tree ul li > span{
@@ -171,11 +175,6 @@
 
 .tree span > a > span{
     padding-right:3px; 
-}
-
-.tree ul > span,.tree li > span{
-    //background-color: #d0d8de;
-    color: #555;
 }
 
 .tree ul li.last-child:before{

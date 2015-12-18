@@ -5,13 +5,13 @@ module.exports = function(grunt){
     connect: {
       options: {
         port: 9000,
-        hostname: 'localhost', //默认就是这个值，可配置为本机某个 IP，localhost 或域名
-        livereload: 35729  //声明给 watch 监听的端口
+        hostname: '127.0.0.1', 
+        livereload: 35729  
       },
 
       server: {
         options: {
-          open: true, //自动打开网页 http://
+          open: true, 
           index: 'index.html',
           maxAge: 300000
         }
@@ -36,6 +36,18 @@ module.exports = function(grunt){
 		}
 	},
 
+	less: {
+    	options: {
+            compress: false,
+            yuicompress: false,
+            ieCompat:true,
+        },
+	    files: {
+	    	"css/style.css": "css/style.less"
+	    }
+		
+    },
+
 	watch: {
 		// build: {
 		// 	files: ['css/*.css','js/*.js'],
@@ -51,7 +63,8 @@ module.exports = function(grunt){
 	          '*.html',
 	          'css/{,*/}*.css',
 	          'js/{,*/}*.js',
-	          'template/*.html'
+	          'template/*.html',
+	          'simplePage/*.html'
 	        ]
 	    }
 	}
@@ -61,7 +74,9 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-less');
 
+  grunt.registerTask('lessc',['less']);
   grunt.registerTask('default',['jshint','watch']);
   grunt.registerTask('serve',['connect:server','watch']);
   

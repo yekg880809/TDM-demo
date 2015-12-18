@@ -1,32 +1,28 @@
-define(["jquery","logUtil"], function($,logUtil) {
-        
+define(["jquery", "logUtil"], function($, logUtil) {
+
     return {
-    	toHumpType:function(chars) {
+        toHumpType: function(chars) {
             // logUtil.log(chars);
-    		if (chars.indexOf('-') < 0){
-    			return chars;
-    		}
+            if (chars.indexOf('-') < 0) {
+                return chars;
+            }
 
-    		chars = chars.replace(/\-\w/g, function(word){
-				return word.slice(1).toUpperCase();
+            chars = chars.replace(/\-\w/g, function(word) {
+                return word.slice(1).toUpperCase();
             });
 
-    		return chars;
-    	},
-        url2Obj:function(url) {
+            return chars;
+        },
+        url2Obj: function(url) {
             var result = {};
-            url.replace(/\w+\//g, function(word){
-                result.type = word.replace('/','');
-            });
-
-            url.replace(/\/\w+/g, function(word){
-                result.id = word.replace('/','');
-            });
+            var exec = url.split('/');
+            result.type = exec[0];
+            result.id = exec[1];
 
             // logUtil.log(result.type + ":" + result.id);
             return result;
         }
     };
 
-   
+
 });

@@ -1,136 +1,149 @@
-;(function($){
-    function debug($obj){
-        if(window.console && window.console.log){  
-            window.console.log($obj);  
-        }  
+;
+(function($) {
+    function debug($obj) {
+        if (window.console && window.console.log) {
+            window.console.log($obj);
+        }
     };
 
-    function _getResource(resource){
+    function _getResource(resource) {
         var data;
-        $.ajax({ 
+        $.ajax({
             url: resource,
-            type:'get',
-            async:false,
-            contentType: "application/json", 
-            dataType:'json',
-            success: function(result){
+            type: 'get',
+            async: false,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(result) {
                 data = result;
             }
         });
         return data;
-    }; 
+    };
 
-    function _getRoot(node){
-        return $('<ul class="root"><span><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span><span id="rootName">'+node.name+'</span></span></ul>');
+    function _getRoot(node) {
+        return $('<ul class="root"><span><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span><span id="rootName">' + node.name + '</span></span></ul>');
     }
 
-    function _getNode(node){
+    function _getNode(node) {
         var temp = '';
-        if(typeof arguments[1].collapse !== "undefined"){
-            temp = '<li data-link="'+node.id+'"><span><a data-toggle="'+arguments[1].collapse+'" href="#'+arguments[1].ltype+node.id+'"><span class="'+arguments[1].defaults+' '+arguments[1].stat+'" aria-hidden="true"></span></a><a href="'+arguments[1].type+'/'+node.id+'">'+node.name+'</a></span></li>';
-        }else{
+        if (typeof arguments[1].collapse !== "undefined") {
+            temp = '<li data-link="' + node.id + '"><span><a data-toggle="' + arguments[1].collapse + '" href="#' + arguments[1].ltype + node.id + '"><span class="' + arguments[1].defaults + ' ' + arguments[1].stat + '" aria-hidden="true"></span></a><a href="' + arguments[1].type + '/' + node.id + '">' + node.name + '</a></span></li>';
+        } else {
             // '<li><span><span class="glyphicon glyphicon-file" aria-hidden="true"></span>bbb</span></li>'
-            temp = '<li><span><span class="'+arguments[1].defaults+' '+arguments[1].stat+'" aria-hidden="true"></span><a href="'+arguments[1].type+'/'+node.id+'">'+node.name+'</a></span></li>';
+            temp = '<li><span><span class="' + arguments[1].defaults + ' ' + arguments[1].stat + '" aria-hidden="true"></span><a href="' + arguments[1].type + '/' + node.id + '">' + node.name + '</a></span></li>';
         }
         return $(temp);
     }
 
-    function _getList(node){
-        return $('<ul id="'+node.type+node.id+'" class="'+node.styles+'"></ul>');
+    function _getList(node) {
+        return $('<ul id="' + node.type + node.id + '" class="' + node.styles + '"></ul>');
     }
 
-    function Tree(obj){
+    function Tree(obj) {
         this.obj = obj;
     }
 
     Tree.prototype = {
-        constructor:Tree,
-        bind: function(resource,type){
+        constructor: Tree,
+        bind: function(resource, type) {
             var _obj = this.obj,
                 root = resource,
                 list = [],
                 temp = {},
                 styles = {
-                    collapse:"collapse",
-                    showlist:"in"
+                    collapse: "collapse",
+                    showlist: "in"
                 },
                 icons = {
-                    defaults:"glyphicon",
-                    open:"glyphicon-folder-open",
-                    close:"glyphicon-folder-close",
-                    file:"glyphicon-file"
+                    defaults: "glyphicon",
+                    open: "glyphicon-folder-open",
+                    close: "glyphicon-folder-close",
+                    file: "glyphicon-file"
                 };
 
-            if(typeof root.nodes === "object" && root.nodes.length > 0){
+            if (typeof root.nodes === "object" && root.nodes.length > 0) {
                 list = root.nodes;
             }
-            if(root.pId == "root"){
+            if (root.pId == "root") {
                 temp = _getRoot(root);
                 $(_obj).append(temp);
                 var t = new Tree(temp);
-                t.bind(list,root.childType);
-            }else{
+                t.bind(list, root.childType);
+            } else {
                 var tmp = $('<ul></ul>');
-                    l = $('');
-                for(var i = root.length-1;i >= 0; i--){
-                    if(typeof root[i].nodes === "object"){
-                        temp = _getNode(root[i],{"type":type,"collapse":styles.collapse,"defaults":icons.defaults,"stat":icons.open});
+                l = $('');
+                for (var i = root.length - 1; i >= 0; i--) {
+                    if (typeof root[i].nodes === "object") {
+                        temp = _getNode(root[i], {
+                            "type": type,
+                            "collapse": styles.collapse,
+                            "defaults": icons.defaults,
+                            "stat": icons.open
+                        });
                         var t = new Tree(temp);
-                        t.bind(root[i].nodes,root[i].childType);
-                    }else{
-                        temp = _getNode(root[i],{"type":type,"defaults":icons.defaults,"stat":icons.file});
+                        t.bind(root[i].nodes, root[i].childType);
+                    } else {
+                        temp = _getNode(root[i], {
+                            "type": type,
+                            "defaults": icons.defaults,
+                            "stat": icons.file
+                        });
                     }
-                   tmp.append(temp);
+                    tmp.append(temp);
                 }
-                if(!_obj.hasClass('root')){
-                    l = _getList({"id":_obj.data('link'),"styles":styles.collapse + " " +styles.showlist});
+                if (!_obj.hasClass('root')) {
+                    l = _getList({
+                        "id": _obj.data('link'),
+                        "styles": styles.collapse + " " + styles.showlist
+                    });
                     $(l).append(tmp.html());
                     $(_obj).append(l);
-                }else{
+                } else {
                     $(_obj).append(tmp.html());
                 }
             }
-            
+
             return this;
         },
-        setIcons: function(){
+        setIcons: function() {
             var icons = {
-                    opened:'glyphicon-folder-open',
-                    closed:'glyphicon-folder-close'
-                },
+                opened: 'glyphicon-folder-open',
+                closed: 'glyphicon-folder-close'
+            },
                 _obj = this.obj;
 
-            $(_obj).on('click','span a',function(e){
+            $(_obj).on('click', 'span a', function(e) {
 
-                var _targt = {};                
-                if(e.target.tagName == 'A' && $(e.target).has('span')){
+                var _targt = {};
+                if (e.target.tagName == 'A' && $(e.target).has('span')) {
                     _targt = $(e.target).children('span');
-                }else if(e.target.tagName == 'SPAN'){
+                } else if (e.target.tagName == 'SPAN') {
                     _targt = $(e.target);
-                }else{
+                } else {
                     return;
                 }
 
                 var t = _targt.closest('li').children('ul');
-                if(t.hasClass('collapse') && t.hasClass('in')){
+                if (t.hasClass('collapse') && t.hasClass('in')) {
                     _targt.removeClass(icons.opened);
                     _targt.addClass(icons.closed);
-                }else if(t.hasClass('collapse')){
+                } else if (t.hasClass('collapse')) {
                     _targt.removeClass(icons.closed);
                     _targt.addClass(icons.opened);
                 }
-                
+
             });
             return this;
         },
-        forIE: function(){
+        forIE: function() {
             var _obj = this.obj;
             $(_obj).find('ul li:last-child').addClass('last-child');
             return this;
         },
-        preventLink: function(){
+        preventLink: function() {
             var _obj = this.obj;
-            $(_obj).find('span + a, a + a').on('click',function(e){
+            $(_obj).find('span + a, a + a').on('click', function(e) {
                 e.preventDefault();
             });
             return this;
@@ -139,44 +152,44 @@
     }
 
     var methods = {
-        init: function (options) {
+        init: function(options) {
             var defaults = {
-                resource:'',
-                preventLink:false
-                },
+                resource: '',
+                preventLink: false
+            },
                 tree = new Tree(this);
 
             var options = $.extend(defaults, options);
-            return this.each(function() { 
+            return this.each(function() {
                 if (typeof options.datas !== 'undefined') {
                     tree.bind(options.datas).setIcons().forIE();
-                }else if (typeof options.resource !== 'undefined') {
+                } else if (typeof options.resource !== 'undefined') {
                     tree.bind(_getResource(options.resource)).setIcons().forIE();
                 };
-                
+
                 options.preventLink && tree.preventLink();
-                
+
             });
         }
     };
 
-    $.fn.tree = function(){
+    $.fn.tree = function() {
         // debug(this);  
         $this = $(this);
 
         var method = arguments[0];
-        if(methods[method]) {
+        if (methods[method]) {
             method = methods[method];
             arguments = Array.prototype.slice.call(arguments, 1);
-        } else if( typeof(method) == 'object' || !method ) {
+        } else if (typeof(method) == 'object' || !method) {
             method = methods.init;
         } else {
-            $.error( 'Method ' +  method + ' does not exist on jQuery.pluginName' );
+            $.error('Method ' + method + ' does not exist on jQuery.pluginName');
             return this;
         }
 
         return method.apply(this, arguments);
-        
+
     };
 
 })(jQuery);

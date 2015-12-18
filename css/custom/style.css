@@ -170,3 +170,45 @@ a > span{
 	border-right-color: #f7f7f7;
 	border-bottom: 2px soild #555;
 }
+
+#work-area table {
+	position: relative;
+	background-color: #fff;
+	border: none;
+	
+}
+
+#work-area table thead ,#work-area table thead tr,#work-area table thead tr th{
+	border: 0 solid #f7f7f7;
+	background-color: #f7f7f7;
+}
+
+#work-area table tbody {
+	position: absolute;
+	height: 250px;
+	width: 100%;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	overflow: auto;
+
+}
+
+#work-area table tbody tr{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+
+}
+
+#work-area table tbody tr td{
+	position: relative;
+	display: block;
+	float: left;
+	width: 25%;
+		
+}
+
+#work-area table tbody tr:hover{
+	cursor: pointer;
+	background-color: #fff;
+}

@@ -1,1260 +1,931 @@
 {
 	"navMenu": {
-		"list": [
-			{"name":"home","type":"home"},
-			{"name":"team","type":"team"},
-			{"name":"vbom","type":"vbom"},
-			{"name":"setting","type":"setting"},
-			{"name":"qq","type":"qq"},
-			{"name":"wechat","type":"wechat"}
-		]
+		"list": [{
+			"name": "home",
+			"type": "home"
+		}, {
+			"name": "team",
+			"type": "team"
+		}, {
+			"name": "vbom",
+			"type": "vbom"
+		}, {
+			"name": "setting",
+			"type": "setting"
+		}, {
+			"name": "qq",
+			"type": "qq"
+		}, {
+			"name": "wechat",
+			"type": "wechat"
+		}]
 	},
 
 	"home": {
-		"class1": [
-			{
-				"name": "home1",
-				"menuId": "home1",
-				"childmenu": [
-					{
-						"name": "home11",
-						"menuId": "home11",
-						"childmenu": [
-							{
-								"name": "home111",
-								"url": "home111"
-							},
-							{
-								"name": "home111",
-								"url": "home111"
-							},
-							{
-								"name": "home111",
-								"url": "home111"
-							}
-						]
-					},
-					{
-						"name": "home12",
-						"menuId": "home12",
-						"childmenu": [
-							{
-								"name": "home111",
-								"url": "home111"
-							},
-							{
-								"name": "home111",
-								"url": "home111"
-							},
-							{
-								"name": "home111",
-								"url": "home111"
-							}
-						]
-					},
-					{
-						"name": "home13",
-						"menuId": "home13",
-						"childmenu": [
-							{
-								"name": "home111",
-								"url": "home111"
-							},
-							{
-								"name": "home111",
-								"url": "home111"
-							},
-							{
-								"name": "home111",
-								"url": "home111"
-							}
-						]
-					}
-				]
-			},
-			{
-				"name": "home2",
-				"menuId": "home2",
-				"childmenu": [
-					{
-						"name": "home21",
-						"menuId": "home21",
-						"childmenu": [
-							{
-								"name": "home211",
-								"url": "home211"
-							},
-							{
-								"name": "home212",
-								"url": "home212"
-							},
-							{
-								"name": "home213",
-								"url": "home213"
-							}
-						]
-					},
-					{
-						"name": "home22",
-						"menuId": "home22",
-						"childmenu": [
-							{
-								"name": "home221",
-								"url": "home221"
-							},
-							{
-								"name": "home222",
-								"url": "home222"
-							},
-							{
-								"name": "home223",
-								"url": "home223"
-							}
-						]
-					},
-					{
-						"name": "home23",
-						"menuId": "home23",
-						"childmenu": [
-							{
-								"name": "home231",
-								"url": "home231"
-							},
-							{
-								"name": "home232",
-								"url": "home232"
-							},
-							{
-								"name": "home233",
-								"url": "home233"
-							}
-						]
-					}
-				]
-			},
-			{
-				"name": "home3",
-				"menuId": "home3",
-				"childmenu": [
-					{
-						"name": "home31",
-						"menuId": "home31",
-						"childmenu": [
-							{
-								"name": "home311",
-								"url": "home311"
-							},
-							{
-								"name": "home312",
-								"url": "home312"
-							},
-							{
-								"name": "home313",
-								"url": "home313"
-							}
-						]
-					},
-					{
-						"name": "home32",
-						"menuId": "home32",
-						"childmenu": [
-							{
-								"name": "home321",
-								"url": "home321"
-							},
-							{
-								"name": "home322",
-								"url": "home322"
-							},
-							{
-								"name": "home323",
-								"url": "home323"
-							}
-						]
-					},
-					{
-						"name": "home33",
-						"menuId": "home33",
-						"childmenu": [
-							{
-								"name": "home331",
-								"url": "home331"
-							},
-							{
-								"name": "home332",
-								"url": "home332"
-							},
-							{
-								"name": "home333",
-								"url": "home333"
-							}
-						]
-					}
-				]
-			}
-		]
+		"class1": [{
+			"name": "home1",
+			"menuId": "home1",
+			"childmenu": [{
+				"name": "home11",
+				"menuId": "home11",
+				"childmenu": [{
+					"name": "single",
+					"url": "simplePage/single.html"
+				}, {
+					"name": "multiple",
+					"url": "simplePage/mult.html"
+				}, {
+					"name": "home111",
+					"url": "home111"
+				}]
+			}, {
+				"name": "home12",
+				"menuId": "home12",
+				"childmenu": [{
+					"name": "home111",
+					"url": "home111"
+				}, {
+					"name": "home111",
+					"url": "home111"
+				}, {
+					"name": "home111",
+					"url": "home111"
+				}]
+			}, {
+				"name": "home13",
+				"menuId": "home13",
+				"childmenu": [{
+					"name": "home111",
+					"url": "home111"
+				}, {
+					"name": "home111",
+					"url": "home111"
+				}, {
+					"name": "home111",
+					"url": "home111"
+				}]
+			}]
+		}, {
+			"name": "home2",
+			"menuId": "home2",
+			"childmenu": [{
+				"name": "home21",
+				"menuId": "home21",
+				"childmenu": [{
+					"name": "home211",
+					"url": "home211"
+				}, {
+					"name": "home212",
+					"url": "home212"
+				}, {
+					"name": "home213",
+					"url": "home213"
+				}]
+			}, {
+				"name": "home22",
+				"menuId": "home22",
+				"childmenu": [{
+					"name": "home221",
+					"url": "home221"
+				}, {
+					"name": "home222",
+					"url": "home222"
+				}, {
+					"name": "home223",
+					"url": "home223"
+				}]
+			}, {
+				"name": "home23",
+				"menuId": "home23",
+				"childmenu": [{
+					"name": "home231",
+					"url": "home231"
+				}, {
+					"name": "home232",
+					"url": "home232"
+				}, {
+					"name": "home233",
+					"url": "home233"
+				}]
+			}]
+		}, {
+			"name": "home3",
+			"menuId": "home3",
+			"childmenu": [{
+				"name": "home31",
+				"menuId": "home31",
+				"childmenu": [{
+					"name": "home311",
+					"url": "home311"
+				}, {
+					"name": "home312",
+					"url": "home312"
+				}, {
+					"name": "home313",
+					"url": "home313"
+				}]
+			}, {
+				"name": "home32",
+				"menuId": "home32",
+				"childmenu": [{
+					"name": "home321",
+					"url": "home321"
+				}, {
+					"name": "home322",
+					"url": "home322"
+				}, {
+					"name": "home323",
+					"url": "home323"
+				}]
+			}, {
+				"name": "home33",
+				"menuId": "home33",
+				"childmenu": [{
+					"name": "home331",
+					"url": "home331"
+				}, {
+					"name": "home332",
+					"url": "home332"
+				}, {
+					"name": "home333",
+					"url": "home333"
+				}]
+			}]
+		}]
 	},
 
 	"vbom": {
-		"class1": [
-			{
-				"name": "vbom1",
-				"menuId": "vbom1",
-				"childmenu": [
-					{
-						"name": "vbom11",
-						"menuId": "vbom11",
-						"childmenu": [
-							{
-								"name": "vbom111",
-								"url": "vbom111"
-							},
-							{
-								"name": "vbom111",
-								"url": "vbom111"
-							},
-							{
-								"name": "vbom111",
-								"url": "vbom111"
-							}
-						]
-					},
-					{
-						"name": "vbom12",
-						"menuId": "vbom12",
-						"childmenu": [
-							{
-								"name": "vbom111",
-								"url": "vbom111"
-							},
-							{
-								"name": "vbom111",
-								"url": "vbom111"
-							},
-							{
-								"name": "vbom111",
-								"url": "vbom111"
-							}
-						]
-					},
-					{
-						"name": "vbom13",
-						"menuId": "vbom13",
-						"childmenu": [
-							{
-								"name": "vbom111",
-								"url": "vbom111"
-							},
-							{
-								"name": "vbom111",
-								"url": "vbom111"
-							},
-							{
-								"name": "vbom111",
-								"url": "vbom111"
-							}
-						]
-					}
-				]
-			},
-			{
-				"name": "vbom2",
-				"menuId": "vbom2",
-				"childmenu": [
-					{
-						"name": "vbom21",
-						"menuId": "vbom21",
-						"childmenu": [
-							{
-								"name": "vbom211",
-								"url": "vbom211"
-							},
-							{
-								"name": "vbom212",
-								"url": "vbom212"
-							},
-							{
-								"name": "vbom213",
-								"url": "vbom213"
-							}
-						]
-					},
-					{
-						"name": "vbom22",
-						"menuId": "vbom22",
-						"childmenu": [
-							{
-								"name": "vbom221",
-								"url": "vbom221"
-							},
-							{
-								"name": "vbom222",
-								"url": "vbom222"
-							},
-							{
-								"name": "vbom223",
-								"url": "vbom223"
-							}
-						]
-					},
-					{
-						"name": "vbom23",
-						"menuId": "vbom23",
-						"childmenu": [
-							{
-								"name": "vbom231",
-								"url": "vbom231"
-							},
-							{
-								"name": "vbom232",
-								"url": "vbom232"
-							},
-							{
-								"name": "vbom233",
-								"url": "vbom233"
-							}
-						]
-					}
-				]
-			},
-			{
-				"name": "vbom3",
-				"menuId": "vbom3",
-				"childmenu": [
-					{
-						"name": "vbom31",
-						"menuId": "vbom31",
-						"childmenu": [
-							{
-								"name": "vbom311",
-								"url": "vbom311"
-							},
-							{
-								"name": "vbom312",
-								"url": "vbom312"
-							},
-							{
-								"name": "vbom313",
-								"url": "vbom313"
-							}
-						]
-					},
-					{
-						"name": "vbom32",
-						"menuId": "vbom32",
-						"childmenu": [
-							{
-								"name": "vbom321",
-								"url": "vbom321"
-							},
-							{
-								"name": "vbom322",
-								"url": "vbom322"
-							},
-							{
-								"name": "vbom323",
-								"url": "vbom323"
-							}
-						]
-					},
-					{
-						"name": "vbom33",
-						"menuId": "vbom33",
-						"childmenu": [
-							{
-								"name": "vbom331",
-								"url": "vbom331"
-							},
-							{
-								"name": "vbom332",
-								"url": "vbom332"
-							},
-							{
-								"name": "vbom333",
-								"url": "vbom333"
-							}
-						]
-					}
-				]
-			}
-		]
+		"class1": [{
+			"name": "vbom1",
+			"menuId": "vbom1",
+			"childmenu": [{
+				"name": "vbom11",
+				"menuId": "vbom11",
+				"childmenu": [{
+					"name": "vbom111",
+					"url": "vbom111"
+				}, {
+					"name": "vbom111",
+					"url": "vbom111"
+				}, {
+					"name": "vbom111",
+					"url": "vbom111"
+				}]
+			}, {
+				"name": "vbom12",
+				"menuId": "vbom12",
+				"childmenu": [{
+					"name": "vbom111",
+					"url": "vbom111"
+				}, {
+					"name": "vbom111",
+					"url": "vbom111"
+				}, {
+					"name": "vbom111",
+					"url": "vbom111"
+				}]
+			}, {
+				"name": "vbom13",
+				"menuId": "vbom13",
+				"childmenu": [{
+					"name": "vbom111",
+					"url": "vbom111"
+				}, {
+					"name": "vbom111",
+					"url": "vbom111"
+				}, {
+					"name": "vbom111",
+					"url": "vbom111"
+				}]
+			}]
+		}, {
+			"name": "vbom2",
+			"menuId": "vbom2",
+			"childmenu": [{
+				"name": "vbom21",
+				"menuId": "vbom21",
+				"childmenu": [{
+					"name": "vbom211",
+					"url": "vbom211"
+				}, {
+					"name": "vbom212",
+					"url": "vbom212"
+				}, {
+					"name": "vbom213",
+					"url": "vbom213"
+				}]
+			}, {
+				"name": "vbom22",
+				"menuId": "vbom22",
+				"childmenu": [{
+					"name": "vbom221",
+					"url": "vbom221"
+				}, {
+					"name": "vbom222",
+					"url": "vbom222"
+				}, {
+					"name": "vbom223",
+					"url": "vbom223"
+				}]
+			}, {
+				"name": "vbom23",
+				"menuId": "vbom23",
+				"childmenu": [{
+					"name": "vbom231",
+					"url": "vbom231"
+				}, {
+					"name": "vbom232",
+					"url": "vbom232"
+				}, {
+					"name": "vbom233",
+					"url": "vbom233"
+				}]
+			}]
+		}, {
+			"name": "vbom3",
+			"menuId": "vbom3",
+			"childmenu": [{
+				"name": "vbom31",
+				"menuId": "vbom31",
+				"childmenu": [{
+					"name": "vbom311",
+					"url": "vbom311"
+				}, {
+					"name": "vbom312",
+					"url": "vbom312"
+				}, {
+					"name": "vbom313",
+					"url": "vbom313"
+				}]
+			}, {
+				"name": "vbom32",
+				"menuId": "vbom32",
+				"childmenu": [{
+					"name": "vbom321",
+					"url": "vbom321"
+				}, {
+					"name": "vbom322",
+					"url": "vbom322"
+				}, {
+					"name": "vbom323",
+					"url": "vbom323"
+				}]
+			}, {
+				"name": "vbom33",
+				"menuId": "vbom33",
+				"childmenu": [{
+					"name": "vbom331",
+					"url": "vbom331"
+				}, {
+					"name": "vbom332",
+					"url": "vbom332"
+				}, {
+					"name": "vbom333",
+					"url": "vbom333"
+				}]
+			}]
+		}]
 	},
 
 	"wechat": {
-		"class1": [
-			{
-				"name": "wechat1",
-				"menuId": "wechat1",
-				"childmenu": [
-					{
-						"name": "wechat11",
-						"menuId": "wechat11",
-						"childmenu": [
-							{
-								"name": "wechat111",
-								"url": "wechat111"
-							},
-							{
-								"name": "wechat111",
-								"url": "wechat111"
-							},
-							{
-								"name": "wechat111",
-								"url": "wechat111"
-							}
-						]
-					},
-					{
-						"name": "wechat12",
-						"menuId": "wechat12",
-						"childmenu": [
-							{
-								"name": "wechat111",
-								"url": "wechat111"
-							},
-							{
-								"name": "wechat111",
-								"url": "wechat111"
-							},
-							{
-								"name": "wechat111",
-								"url": "wechat111"
-							}
-						]
-					},
-					{
-						"name": "wechat13",
-						"menuId": "wechat13",
-						"childmenu": [
-							{
-								"name": "wechat111",
-								"url": "wechat111"
-							},
-							{
-								"name": "wechat111",
-								"url": "wechat111"
-							},
-							{
-								"name": "wechat111",
-								"url": "wechat111"
-							}
-						]
-					}
-				]
-			},
-			{
-				"name": "wechat2",
-				"menuId": "wechat2",
-				"childmenu": [
-					{
-						"name": "wechat21",
-						"menuId": "wechat21",
-						"childmenu": [
-							{
-								"name": "wechat211",
-								"url": "wechat211"
-							},
-							{
-								"name": "wechat212",
-								"url": "wechat212"
-							},
-							{
-								"name": "wechat213",
-								"url": "wechat213"
-							}
-						]
-					},
-					{
-						"name": "wechat22",
-						"menuId": "wechat22",
-						"childmenu": [
-							{
-								"name": "wechat221",
-								"url": "wechat221"
-							},
-							{
-								"name": "wechat222",
-								"url": "wechat222"
-							},
-							{
-								"name": "wechat223",
-								"url": "wechat223"
-							}
-						]
-					},
-					{
-						"name": "wechat23",
-						"menuId": "wechat23",
-						"childmenu": [
-							{
-								"name": "wechat231",
-								"url": "wechat231"
-							},
-							{
-								"name": "wechat232",
-								"url": "wechat232"
-							},
-							{
-								"name": "wechat233",
-								"url": "wechat233"
-							}
-						]
-					}
-				]
-			},
-			{
-				"name": "wechat3",
-				"menuId": "wechat3",
-				"childmenu": [
-					{
-						"name": "wechat31",
-						"menuId": "wechat31",
-						"childmenu": [
-							{
-								"name": "wechat311",
-								"url": "wechat311"
-							},
-							{
-								"name": "wechat312",
-								"url": "wechat312"
-							},
-							{
-								"name": "wechat313",
-								"url": "wechat313"
-							}
-						]
-					},
-					{
-						"name": "wechat32",
-						"menuId": "wechat32",
-						"childmenu": [
-							{
-								"name": "wechat321",
-								"url": "wechat321"
-							},
-							{
-								"name": "wechat322",
-								"url": "wechat322"
-							},
-							{
-								"name": "wechat323",
-								"url": "wechat323"
-							}
-						]
-					},
-					{
-						"name": "wechat33",
-						"menuId": "wechat33",
-						"childmenu": [
-							{
-								"name": "wechat331",
-								"url": "wechat331"
-							},
-							{
-								"name": "wechat332",
-								"url": "wechat332"
-							},
-							{
-								"name": "wechat333",
-								"url": "wechat333"
-							}
-						]
-					}
-				]
-			}
-		]
+		"class1": [{
+			"name": "wechat1",
+			"menuId": "wechat1",
+			"childmenu": [{
+				"name": "wechat11",
+				"menuId": "wechat11",
+				"childmenu": [{
+					"name": "wechat111",
+					"url": "wechat111"
+				}, {
+					"name": "wechat111",
+					"url": "wechat111"
+				}, {
+					"name": "wechat111",
+					"url": "wechat111"
+				}]
+			}, {
+				"name": "wechat12",
+				"menuId": "wechat12",
+				"childmenu": [{
+					"name": "wechat111",
+					"url": "wechat111"
+				}, {
+					"name": "wechat111",
+					"url": "wechat111"
+				}, {
+					"name": "wechat111",
+					"url": "wechat111"
+				}]
+			}, {
+				"name": "wechat13",
+				"menuId": "wechat13",
+				"childmenu": [{
+					"name": "wechat111",
+					"url": "wechat111"
+				}, {
+					"name": "wechat111",
+					"url": "wechat111"
+				}, {
+					"name": "wechat111",
+					"url": "wechat111"
+				}]
+			}]
+		}, {
+			"name": "wechat2",
+			"menuId": "wechat2",
+			"childmenu": [{
+				"name": "wechat21",
+				"menuId": "wechat21",
+				"childmenu": [{
+					"name": "wechat211",
+					"url": "wechat211"
+				}, {
+					"name": "wechat212",
+					"url": "wechat212"
+				}, {
+					"name": "wechat213",
+					"url": "wechat213"
+				}]
+			}, {
+				"name": "wechat22",
+				"menuId": "wechat22",
+				"childmenu": [{
+					"name": "wechat221",
+					"url": "wechat221"
+				}, {
+					"name": "wechat222",
+					"url": "wechat222"
+				}, {
+					"name": "wechat223",
+					"url": "wechat223"
+				}]
+			}, {
+				"name": "wechat23",
+				"menuId": "wechat23",
+				"childmenu": [{
+					"name": "wechat231",
+					"url": "wechat231"
+				}, {
+					"name": "wechat232",
+					"url": "wechat232"
+				}, {
+					"name": "wechat233",
+					"url": "wechat233"
+				}]
+			}]
+		}, {
+			"name": "wechat3",
+			"menuId": "wechat3",
+			"childmenu": [{
+				"name": "wechat31",
+				"menuId": "wechat31",
+				"childmenu": [{
+					"name": "wechat311",
+					"url": "wechat311"
+				}, {
+					"name": "wechat312",
+					"url": "wechat312"
+				}, {
+					"name": "wechat313",
+					"url": "wechat313"
+				}]
+			}, {
+				"name": "wechat32",
+				"menuId": "wechat32",
+				"childmenu": [{
+					"name": "wechat321",
+					"url": "wechat321"
+				}, {
+					"name": "wechat322",
+					"url": "wechat322"
+				}, {
+					"name": "wechat323",
+					"url": "wechat323"
+				}]
+			}, {
+				"name": "wechat33",
+				"menuId": "wechat33",
+				"childmenu": [{
+					"name": "wechat331",
+					"url": "wechat331"
+				}, {
+					"name": "wechat332",
+					"url": "wechat332"
+				}, {
+					"name": "wechat333",
+					"url": "wechat333"
+				}]
+			}]
+		}]
 	},
 
 	"qq": {
-		"class1": [
-			{
-				"name": "qq1",
-				"menuId": "qq1",
-				"childmenu": [
-					{
-						"name": "qq11",
-						"menuId": "qq11",
-						"childmenu": [
-							{
-								"name": "qq111",
-								"url": "qq111"
-							},
-							{
-								"name": "qq111",
-								"url": "qq111"
-							},
-							{
-								"name": "qq111",
-								"url": "qq111"
-							}
-						]
-					},
-					{
-						"name": "qq12",
-						"menuId": "qq12",
-						"childmenu": [
-							{
-								"name": "qq111",
-								"url": "qq111"
-							},
-							{
-								"name": "qq111",
-								"url": "qq111"
-							},
-							{
-								"name": "qq111",
-								"url": "qq111"
-							}
-						]
-					},
-					{
-						"name": "qq13",
-						"menuId": "qq13",
-						"childmenu": [
-							{
-								"name": "qq111",
-								"url": "qq111"
-							},
-							{
-								"name": "qq111",
-								"url": "qq111"
-							},
-							{
-								"name": "qq111",
-								"url": "qq111"
-							}
-						]
-					}
-				]
-			},
-			{
-				"name": "qq2",
-				"menuId": "qq2",
-				"childmenu": [
-					{
-						"name": "qq21",
-						"menuId": "qq21",
-						"childmenu": [
-							{
-								"name": "qq211",
-								"url": "qq211"
-							},
-							{
-								"name": "qq212",
-								"url": "qq212"
-							},
-							{
-								"name": "qq213",
-								"url": "qq213"
-							}
-						]
-					},
-					{
-						"name": "qq22",
-						"menuId": "qq22",
-						"childmenu": [
-							{
-								"name": "qq221",
-								"url": "qq221"
-							},
-							{
-								"name": "qq222",
-								"url": "qq222"
-							},
-							{
-								"name": "qq223",
-								"url": "qq223"
-							}
-						]
-					},
-					{
-						"name": "qq23",
-						"menuId": "qq23",
-						"childmenu": [
-							{
-								"name": "qq231",
-								"url": "qq231"
-							},
-							{
-								"name": "qq232",
-								"url": "qq232"
-							},
-							{
-								"name": "qq233",
-								"url": "qq233"
-							}
-						]
-					}
-				]
-			},
-			{
-				"name": "qq3",
-				"menuId": "qq3",
-				"childmenu": [
-					{
-						"name": "qq31",
-						"menuId": "qq31",
-						"childmenu": [
-							{
-								"name": "qq311",
-								"url": "qq311"
-							},
-							{
-								"name": "qq312",
-								"url": "qq312"
-							},
-							{
-								"name": "qq313",
-								"url": "qq313"
-							}
-						]
-					},
-					{
-						"name": "qq32",
-						"menuId": "qq32",
-						"childmenu": [
-							{
-								"name": "qq321",
-								"url": "qq321"
-							},
-							{
-								"name": "qq322",
-								"url": "qq322"
-							},
-							{
-								"name": "qq323",
-								"url": "qq323"
-							}
-						]
-					},
-					{
-						"name": "qq33",
-						"menuId": "qq33",
-						"childmenu": [
-							{
-								"name": "qq331",
-								"url": "qq331"
-							},
-							{
-								"name": "qq332",
-								"url": "qq332"
-							},
-							{
-								"name": "qq333",
-								"url": "qq333"
-							}
-						]
-					}
-				]
-			}
-		]
+		"class1": [{
+			"name": "qq1",
+			"menuId": "qq1",
+			"childmenu": [{
+				"name": "qq11",
+				"menuId": "qq11",
+				"childmenu": [{
+					"name": "qq111",
+					"url": "qq111"
+				}, {
+					"name": "qq111",
+					"url": "qq111"
+				}, {
+					"name": "qq111",
+					"url": "qq111"
+				}]
+			}, {
+				"name": "qq12",
+				"menuId": "qq12",
+				"childmenu": [{
+					"name": "qq111",
+					"url": "qq111"
+				}, {
+					"name": "qq111",
+					"url": "qq111"
+				}, {
+					"name": "qq111",
+					"url": "qq111"
+				}]
+			}, {
+				"name": "qq13",
+				"menuId": "qq13",
+				"childmenu": [{
+					"name": "qq111",
+					"url": "qq111"
+				}, {
+					"name": "qq111",
+					"url": "qq111"
+				}, {
+					"name": "qq111",
+					"url": "qq111"
+				}]
+			}]
+		}, {
+			"name": "qq2",
+			"menuId": "qq2",
+			"childmenu": [{
+				"name": "qq21",
+				"menuId": "qq21",
+				"childmenu": [{
+					"name": "qq211",
+					"url": "qq211"
+				}, {
+					"name": "qq212",
+					"url": "qq212"
+				}, {
+					"name": "qq213",
+					"url": "qq213"
+				}]
+			}, {
+				"name": "qq22",
+				"menuId": "qq22",
+				"childmenu": [{
+					"name": "qq221",
+					"url": "qq221"
+				}, {
+					"name": "qq222",
+					"url": "qq222"
+				}, {
+					"name": "qq223",
+					"url": "qq223"
+				}]
+			}, {
+				"name": "qq23",
+				"menuId": "qq23",
+				"childmenu": [{
+					"name": "qq231",
+					"url": "qq231"
+				}, {
+					"name": "qq232",
+					"url": "qq232"
+				}, {
+					"name": "qq233",
+					"url": "qq233"
+				}]
+			}]
+		}, {
+			"name": "qq3",
+			"menuId": "qq3",
+			"childmenu": [{
+				"name": "qq31",
+				"menuId": "qq31",
+				"childmenu": [{
+					"name": "qq311",
+					"url": "qq311"
+				}, {
+					"name": "qq312",
+					"url": "qq312"
+				}, {
+					"name": "qq313",
+					"url": "qq313"
+				}]
+			}, {
+				"name": "qq32",
+				"menuId": "qq32",
+				"childmenu": [{
+					"name": "qq321",
+					"url": "qq321"
+				}, {
+					"name": "qq322",
+					"url": "qq322"
+				}, {
+					"name": "qq323",
+					"url": "qq323"
+				}]
+			}, {
+				"name": "qq33",
+				"menuId": "qq33",
+				"childmenu": [{
+					"name": "qq331",
+					"url": "qq331"
+				}, {
+					"name": "qq332",
+					"url": "qq332"
+				}, {
+					"name": "qq333",
+					"url": "qq333"
+				}]
+			}]
+		}]
 	},
 
 	"setting": {
-		"class1": [
-			{
-				"name": "setting1",
-				"menuId": "setting1",
-				"childmenu": [
-					{
-						"name": "setting11",
-						"menuId": "setting11",
-						"childmenu": [
-							{
-								"name": "setting111",
-								"url": "setting111"
-							},
-							{
-								"name": "setting111",
-								"url": "setting111"
-							},
-							{
-								"name": "setting111",
-								"url": "setting111"
-							}
-						]
-					},
-					{
-						"name": "setting12",
-						"menuId": "setting12",
-						"childmenu": [
-							{
-								"name": "setting111",
-								"url": "setting111"
-							},
-							{
-								"name": "setting111",
-								"url": "setting111"
-							},
-							{
-								"name": "setting111",
-								"url": "setting111"
-							}
-						]
-					},
-					{
-						"name": "setting13",
-						"menuId": "setting13",
-						"childmenu": [
-							{
-								"name": "setting111",
-								"url": "setting111"
-							},
-							{
-								"name": "setting111",
-								"url": "setting111"
-							},
-							{
-								"name": "setting111",
-								"url": "setting111"
-							}
-						]
-					}
-				]
-			},
-			{
-				"name": "setting2",
-				"menuId": "setting2",
-				"childmenu": [
-					{
-						"name": "setting21",
-						"menuId": "setting21",
-						"childmenu": [
-							{
-								"name": "setting211",
-								"url": "setting211"
-							},
-							{
-								"name": "setting212",
-								"url": "setting212"
-							},
-							{
-								"name": "setting213",
-								"url": "setting213"
-							}
-						]
-					},
-					{
-						"name": "setting22",
-						"menuId": "setting22",
-						"childmenu": [
-							{
-								"name": "setting221",
-								"url": "setting221"
-							},
-							{
-								"name": "setting222",
-								"url": "setting222"
-							},
-							{
-								"name": "setting223",
-								"url": "setting223"
-							}
-						]
-					},
-					{
-						"name": "setting23",
-						"menuId": "setting23",
-						"childmenu": [
-							{
-								"name": "setting231",
-								"url": "setting231"
-							},
-							{
-								"name": "setting232",
-								"url": "setting232"
-							},
-							{
-								"name": "setting233",
-								"url": "setting233"
-							}
-						]
-					}
-				]
-			},
-			{
-				"name": "setting3",
-				"menuId": "setting3",
-				"childmenu": [
-					{
-						"name": "setting31",
-						"menuId": "setting31",
-						"childmenu": [
-							{
-								"name": "setting311",
-								"url": "setting311"
-							},
-							{
-								"name": "setting312",
-								"url": "setting312"
-							},
-							{
-								"name": "setting313",
-								"url": "setting313"
-							}
-						]
-					},
-					{
-						"name": "setting32",
-						"menuId": "setting32",
-						"childmenu": [
-							{
-								"name": "setting321",
-								"url": "setting321"
-							},
-							{
-								"name": "setting322",
-								"url": "setting322"
-							},
-							{
-								"name": "setting323",
-								"url": "setting323"
-							}
-						]
-					},
-					{
-						"name": "setting33",
-						"menuId": "setting33",
-						"childmenu": [
-							{
-								"name": "setting331",
-								"url": "setting331"
-							},
-							{
-								"name": "setting332",
-								"url": "setting332"
-							},
-							{
-								"name": "setting333",
-								"url": "setting333"
-							}
-						]
-					}
-				]
-			}
-		]
+		"class1": [{
+			"name": "setting1",
+			"menuId": "setting1",
+			"childmenu": [{
+				"name": "setting11",
+				"menuId": "setting11",
+				"childmenu": [{
+					"name": "setting111",
+					"url": "setting111"
+				}, {
+					"name": "setting111",
+					"url": "setting111"
+				}, {
+					"name": "setting111",
+					"url": "setting111"
+				}]
+			}, {
+				"name": "setting12",
+				"menuId": "setting12",
+				"childmenu": [{
+					"name": "setting111",
+					"url": "setting111"
+				}, {
+					"name": "setting111",
+					"url": "setting111"
+				}, {
+					"name": "setting111",
+					"url": "setting111"
+				}]
+			}, {
+				"name": "setting13",
+				"menuId": "setting13",
+				"childmenu": [{
+					"name": "setting111",
+					"url": "setting111"
+				}, {
+					"name": "setting111",
+					"url": "setting111"
+				}, {
+					"name": "setting111",
+					"url": "setting111"
+				}]
+			}]
+		}, {
+			"name": "setting2",
+			"menuId": "setting2",
+			"childmenu": [{
+				"name": "setting21",
+				"menuId": "setting21",
+				"childmenu": [{
+					"name": "setting211",
+					"url": "setting211"
+				}, {
+					"name": "setting212",
+					"url": "setting212"
+				}, {
+					"name": "setting213",
+					"url": "setting213"
+				}]
+			}, {
+				"name": "setting22",
+				"menuId": "setting22",
+				"childmenu": [{
+					"name": "setting221",
+					"url": "setting221"
+				}, {
+					"name": "setting222",
+					"url": "setting222"
+				}, {
+					"name": "setting223",
+					"url": "setting223"
+				}]
+			}, {
+				"name": "setting23",
+				"menuId": "setting23",
+				"childmenu": [{
+					"name": "setting231",
+					"url": "setting231"
+				}, {
+					"name": "setting232",
+					"url": "setting232"
+				}, {
+					"name": "setting233",
+					"url": "setting233"
+				}]
+			}]
+		}, {
+			"name": "setting3",
+			"menuId": "setting3",
+			"childmenu": [{
+				"name": "setting31",
+				"menuId": "setting31",
+				"childmenu": [{
+					"name": "setting311",
+					"url": "setting311"
+				}, {
+					"name": "setting312",
+					"url": "setting312"
+				}, {
+					"name": "setting313",
+					"url": "setting313"
+				}]
+			}, {
+				"name": "setting32",
+				"menuId": "setting32",
+				"childmenu": [{
+					"name": "setting321",
+					"url": "setting321"
+				}, {
+					"name": "setting322",
+					"url": "setting322"
+				}, {
+					"name": "setting323",
+					"url": "setting323"
+				}]
+			}, {
+				"name": "setting33",
+				"menuId": "setting33",
+				"childmenu": [{
+					"name": "setting331",
+					"url": "setting331"
+				}, {
+					"name": "setting332",
+					"url": "setting332"
+				}, {
+					"name": "setting333",
+					"url": "setting333"
+				}]
+			}]
+		}]
 	},
 
-	"team":{
-		"class1": [
-			{
-				"name": "team1",
-				"menuId": "team1",
-				"childmenu": [
-					{
-						"name": "team11",
-						"menuId": "team11",
-						"childmenu": [
-							{
-								"name": "team111",
-								"url": "team111"
-							},
-							{
-								"name": "team111",
-								"url": "team111"
-							},
-							{
-								"name": "team111",
-								"url": "team111"
-							}
-						]
-					},
-					{
-						"name": "team12",
-						"menuId": "team12",
-						"childmenu": [
-							{
-								"name": "team111",
-								"url": "team111"
-							},
-							{
-								"name": "team111",
-								"url": "team111"
-							},
-							{
-								"name": "team111",
-								"url": "team111"
-							}
-						]
-					},
-					{
-						"name": "team13",
-						"menuId": "team13",
-						"childmenu": [
-							{
-								"name": "team111",
-								"url": "team111"
-							},
-							{
-								"name": "team111",
-								"url": "team111"
-							},
-							{
-								"name": "team111",
-								"url": "team111"
-							}
-						]
-					}
-				]
-			},
-			{
-				"name": "team2",
-				"menuId": "team2",
-				"childmenu": [
-					{
-						"name": "team21",
-						"menuId": "team21",
-						"childmenu": [
-							{
-								"name": "team211",
-								"url": "team211"
-							},
-							{
-								"name": "team212",
-								"url": "team212"
-							},
-							{
-								"name": "team213",
-								"url": "team213"
-							}
-						]
-					},
-					{
-						"name": "team22",
-						"menuId": "team22",
-						"childmenu": [
-							{
-								"name": "team221",
-								"url": "team221"
-							},
-							{
-								"name": "team222",
-								"url": "team222"
-							},
-							{
-								"name": "team223",
-								"url": "team223"
-							}
-						]
-					},
-					{
-						"name": "team23",
-						"menuId": "team23",
-						"childmenu": [
-							{
-								"name": "team231",
-								"url": "team231"
-							},
-							{
-								"name": "team232",
-								"url": "team232"
-							},
-							{
-								"name": "team233",
-								"url": "team233"
-							}
-						]
-					}
-				]
-			},
-			{
-				"name": "team3",
-				"menuId": "team3",
-				"childmenu": [
-					{
-						"name": "team31",
-						"menuId": "team31",
-						"childmenu": [
-							{
-								"name": "team311",
-								"url": "team311"
-							},
-							{
-								"name": "team312",
-								"url": "team312"
-							},
-							{
-								"name": "team313",
-								"url": "team313"
-							}
-						]
-					},
-					{
-						"name": "team32",
-						"menuId": "team32",
-						"childmenu": [
-							{
-								"name": "team321",
-								"url": "team321"
-							},
-							{
-								"name": "team322",
-								"url": "team322"
-							},
-							{
-								"name": "team323",
-								"url": "team323"
-							}
-						]
-					},
-					{
-						"name": "team33",
-						"menuId": "team33",
-						"childmenu": [
-							{
-								"name": "team331",
-								"url": "team331"
-							},
-							{
-								"name": "team332",
-								"url": "team332"
-							},
-							{
-								"name": "team333",
-								"url": "team333"
-							}
-						]
-					}
-				]
-			}
-		]
+	"team": {
+		"class1": [{
+			"name": "team1",
+			"menuId": "team1",
+			"childmenu": [{
+				"name": "team11",
+				"menuId": "team11",
+				"childmenu": [{
+					"name": "team111",
+					"url": "team111"
+				}, {
+					"name": "team111",
+					"url": "team111"
+				}, {
+					"name": "team111",
+					"url": "team111"
+				}]
+			}, {
+				"name": "team12",
+				"menuId": "team12",
+				"childmenu": [{
+					"name": "team111",
+					"url": "team111"
+				}, {
+					"name": "team111",
+					"url": "team111"
+				}, {
+					"name": "team111",
+					"url": "team111"
+				}]
+			}, {
+				"name": "team13",
+				"menuId": "team13",
+				"childmenu": [{
+					"name": "team111",
+					"url": "team111"
+				}, {
+					"name": "team111",
+					"url": "team111"
+				}, {
+					"name": "team111",
+					"url": "team111"
+				}]
+			}]
+		}, {
+			"name": "team2",
+			"menuId": "team2",
+			"childmenu": [{
+				"name": "team21",
+				"menuId": "team21",
+				"childmenu": [{
+					"name": "team211",
+					"url": "team211"
+				}, {
+					"name": "team212",
+					"url": "team212"
+				}, {
+					"name": "team213",
+					"url": "team213"
+				}]
+			}, {
+				"name": "team22",
+				"menuId": "team22",
+				"childmenu": [{
+					"name": "team221",
+					"url": "team221"
+				}, {
+					"name": "team222",
+					"url": "team222"
+				}, {
+					"name": "team223",
+					"url": "team223"
+				}]
+			}, {
+				"name": "team23",
+				"menuId": "team23",
+				"childmenu": [{
+					"name": "team231",
+					"url": "team231"
+				}, {
+					"name": "team232",
+					"url": "team232"
+				}, {
+					"name": "team233",
+					"url": "team233"
+				}]
+			}]
+		}, {
+			"name": "team3",
+			"menuId": "team3",
+			"childmenu": [{
+				"name": "team31",
+				"menuId": "team31",
+				"childmenu": [{
+					"name": "team311",
+					"url": "team311"
+				}, {
+					"name": "team312",
+					"url": "team312"
+				}, {
+					"name": "team313",
+					"url": "team313"
+				}]
+			}, {
+				"name": "team32",
+				"menuId": "team32",
+				"childmenu": [{
+					"name": "team321",
+					"url": "team321"
+				}, {
+					"name": "team322",
+					"url": "team322"
+				}, {
+					"name": "team323",
+					"url": "team323"
+				}]
+			}, {
+				"name": "team33",
+				"menuId": "team33",
+				"childmenu": [{
+					"name": "team331",
+					"url": "team331"
+				}, {
+					"name": "team332",
+					"url": "team332"
+				}, {
+					"name": "team333",
+					"url": "team333"
+				}]
+			}]
+		}]
 	},
 
 	"tree": {
-		
-		"name":"试验树",
-		"id":"1111111111",
-		"pId":"root",
-		"childType":"product",
-		"nodes":[
-			{
-				"name":"products1",
-				"id":"pd11111111",
-				"pId":"pd1",
-				"childType":"project",
-				"nodes":[
-					{
-						"name":"project11",
-						"id":"pj11111111",
-						"pId":"pj1"
-					},
-					{
-						"name":"project12",
-						"id":"pj22222222",
-						"pId":"pj2",
-						"childType":"subject",
-						"nodes":[
-							{
-								"name":"subject1",
-								"id":"s111111111",
-								"pId":"s1"
-							},
-							{
-								"name":"subject2",
-								"id":"s222222222",
-								"pId":"s2"
-							},
-							{
-								"name":"subject3",
-								"id":"s333333333",
-								"pId":"s3"
-							},
-							{
-								"name":"subject4",
-								"id":"s444444444",
-								"pId":"s4"
-							}
-						]
-					},
-					{
-						"name":"project13",
-						"id":"pj33333333",
-						"pId":"pj3"
-					}
-				]
-				
-			},
-			{
-				"name":"products2",
-				"id":"pd22222222",
-				"pId":"pd2"
-			},
-			{
-				"name":"products3",
-				"id":"pd33333333",
-				"pId":"pd3",
-				"childType":"project",
-				"nodes":[
-					{
-						"name":"project31",
-						"id":"pj311111111",
-						"pId":"pj31"
-					},
-					{
-						"name":"project32",
-						"id":"pj322222222",
-						"pId":"pj32",
-						"childType":"subject",
-						"nodes":[
-							{
-								"name":"subject321",
-								"id":"s111111111",
-								"pId":"s1"
-							},
-							{
-								"name":"subject322",
-								"id":"s222222222",
-								"pId":"s2"
-							},
-							{
-								"name":"subject323",
-								"id":"s333333333",
-								"pId":"s3"
-							},
-							{
-								"name":"subject324",
-								"id":"s444444444",
-								"pId":"s4"
-							}
-						]
-					},
-					{
-						"name":"project3",
-						"id":"pj333333333",
-						"pId":"pj33"
-					}
-				]
-			},
-			{
-				"name":"products4",
-				"id":"pd44444444",
-				"pId":"pd4",
-				"childType":"project",
-				"nodes":[
-					{
-						"name":"project41",
-						"id":"pj411111111",
-						"pId":"pj41"
-					},
-					{
-						"name":"project42",
-						"id":"pj22222222",
-						"pId":"pj42"
-					},
-					{
-						"name":"project43",
-						"id":"pj433333333",
-						"pId":"pj43"
-					}
-				]
-			},
-			{
-				"name":"products5",
-				"id":"p55555555",
-				"pId":"p5"
-			}
-		]
+
+		"name": "试验树",
+		"id": "1111111111",
+		"pId": "root",
+		"childType": "product",
+		"nodes": [{
+			"name": "products1",
+			"id": "pd11111111",
+			"pId": "pd1",
+			"childType": "project",
+			"nodes": [{
+				"name": "project11",
+				"id": "pj11111111",
+				"pId": "pj1"
+			}, {
+				"name": "project12",
+				"id": "pj22222222",
+				"pId": "pj2",
+				"childType": "subject",
+				"nodes": [{
+					"name": "subject1",
+					"id": "s111111111",
+					"pId": "s1"
+				}, {
+					"name": "subject2",
+					"id": "s222222222",
+					"pId": "s2"
+				}, {
+					"name": "subject3",
+					"id": "s333333333",
+					"pId": "s3"
+				}, {
+					"name": "subject4",
+					"id": "s444444444",
+					"pId": "s4"
+				}]
+			}, {
+				"name": "project13",
+				"id": "pj33333333",
+				"pId": "pj3"
+			}]
+
+		}, {
+			"name": "products2",
+			"id": "pd22222222",
+			"pId": "pd2"
+		}, {
+			"name": "products3",
+			"id": "pd33333333",
+			"pId": "pd3",
+			"childType": "project",
+			"nodes": [{
+				"name": "project31",
+				"id": "pj311111111",
+				"pId": "pj31"
+			}, {
+				"name": "project32",
+				"id": "pj322222222",
+				"pId": "pj32",
+				"childType": "subject",
+				"nodes": [{
+					"name": "subject321",
+					"id": "s111111111",
+					"pId": "s1"
+				}, {
+					"name": "subject322",
+					"id": "s222222222",
+					"pId": "s2"
+				}, {
+					"name": "subject323",
+					"id": "s333333333",
+					"pId": "s3"
+				}, {
+					"name": "subject324",
+					"id": "s444444444",
+					"pId": "s4"
+				}]
+			}, {
+				"name": "project3",
+				"id": "pj333333333",
+				"pId": "pj33"
+			}]
+		}, {
+			"name": "products4",
+			"id": "pd44444444",
+			"pId": "pd4",
+			"childType": "project",
+			"nodes": [{
+				"name": "project41",
+				"id": "pj411111111",
+				"pId": "pj41"
+			}, {
+				"name": "project42",
+				"id": "pj22222222",
+				"pId": "pj42"
+			}, {
+				"name": "project43",
+				"id": "pj433333333",
+				"pId": "pj43"
+			}]
+		}, {
+			"name": "products5",
+			"id": "p55555555",
+			"pId": "p5"
+		}]
 
 	}
-	
+
 }

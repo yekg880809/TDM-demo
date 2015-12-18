@@ -1,10 +1,10 @@
-define(["jquery","accessUtil"],function($,acs) {
+define(["jquery", "accessUtil"], function($, acs) {
 
-        var cfg = acs.initConfig();
+	var cfg = acs.initConfig();
 
-        return {
-            getConfig:function(type){
-                return cfg[type];
-            }
-        }
-    })
+	return {
+		getConfig: function(type) {
+			return cfg[type];
+		}
+	}
+})
