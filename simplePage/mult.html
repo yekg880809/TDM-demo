@@ -12,166 +12,7 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- custom -->
-    <style type="text/css">
-      body{
-         min-width: 955px;
-         font-family: "微软雅黑";
-      }
-
-      .experiment-title{
-        padding: 5px auto 5px 20px;
-        margin: 10px auto 10px;
-        text-indent: 20px;
-      }
-
-      .experiment-detail i{
-        font-size: 16px;
-        color: red;
-      }
-
-      .experiment-itemSet{
-        min-width: 955px;
-        position: absolute;
-        width: 100%;
-        top:120px;
-        bottom: 60px;
-        overflow: auto;
-      }
-
-      .experiment-item{
-        position: relative;
-        margin: 0 10px 10px;
-        overflow: hidden;
-      }
-
-      .experiment-item .subject-info{
-        width: 200px;
-        margin: 10px auto 10px 10px;
-        border: 1px solid #ddd;
-      }
-
-      .subject-info th{
-        padding: 5px 50px;
-        text-align: center;
-      }
-
-       .subject-info > tbody > tr > td{
-        padding: 5px 20px;
-        text-align: center;
-        background-color: #fff;
-      }
-
-      .equip-status{
-        margin-top: 7px;
-        margin-left: 30px;
-      }
-
-      .equip-status .status-label{
-        margin-left: 10px;
-      }
-
-      .equip-status .status-label + span{
-        display: block;
-        width: 30px;
-        height: 30px;
-        margin-top: -5px;
-        border: 1px solid #ddd;
-        float: left;
-      }
-
-      .equip-info{
-        width: 20%;
-        margin: 0px 5px 10px 10px;
-        border: 1px solid #ddd;
-        clear:both;
-      }
-
-      .equip-load{
-        width: 76%;
-        margin-right:17px;
-        margin-bottom:10px; 
-        font-size: 0.68em;
-
-      }
-
-      .equip-load caption{
-        font-size: 1.4em;
-        text-indent: 5px;
-      }
-
-      .equip-load tr{
-        display: inline-block;
-        width: 100%;
-        margin: 0px 20px 5px 0;
-      }
-
-      .equip-load th,.equip-load td{
-        display: inline-block;
-        width: 2.81%;
-        height: 23px;
-        padding-top: 0.3em;
-        border: 1px solid #ddd;
-        text-align: center;
-      }
-
-      .equip-load th{
-        background-color: #f5f5f5;
-        color: #111;
-      }
-
-      .equip-load td{
-        cursor: pointer;
-      }
-
-      .equip-info p{
-        padding: 5px 10px;
-        font-size: 15px;
-        word-wrap: break-word; 
-      }
-
-      .subject-detail-btn{
-        position: absolute;
-        top: 29px;
-        right: 30px;
-      }
-
-      .experiment-footer{
-        min-width: 100%;
-        position: absolute;
-        width: 100%;
-        bottom: 0px;
-        right: 0px;
-        margin-bottom: 0px;
-        box-shadow: 2px 1px 1px #ddd;
-        background-color: #0d394f;
-        color: #fff;
-      }
-
-      .experiment-footer a{
-        margin-right: 10px;
-        margin-left: 0px;
-      }
-
-      .default-color{
-        background-color: #f5f5f5;
-      }
-
-      .equip-empty{
-        background-color: #fff;
-      }
-
-      .equip-occupy{
-        background-color: #f2572d;
-      }
-
-      .equip-repair{
-        background-color: #f1c40f;
-      }
-
-      .equip-free{
-        background-color: #2ecc71;
-      }
-    </style>
+    <link rel="stylesheet" href="simple.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -182,7 +23,7 @@
     <![endif]-->
   </head>
   <body>
-    <h4 class="experiment-title page-header">试验时间评估（按设备负载）</h4>
+    <h4 class="experiment-title page-header"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>试验时间评估（按设备负载）</h4>
     <p class="experiment-detail well">您选中的试验科目数为 <i>x</i> 个，其中 <i>y</i> 个的设定时间与系统评估的时间有冲突，很可能无法执行，请更改该科目的时间设置。</p>
     <div class="experiment-itemSet">
       <div class="experiment-item panel panel-default">
@@ -201,6 +42,15 @@
           </tbody>
         </table>
 
+        <div class="equip-status equip-status-float pull-left">
+          <span class="status-label pull-left">设备维护：</span>
+          <span class="pull-left equip-repair"></span>
+          <span class="status-label pull-left">设备占用：</span>
+          <span class="pull-left equip-occupy"></span>
+          <span class="status-label pull-left">设备空闲：</span>
+          <span class="pull-left equip-free"></span>
+        </div>
+
         <a class="subject-detail-btn btn btn-info" href="">科目预估细节</a>
 
         <div class="equip-info pull-left clearfix">
@@ -210,7 +60,7 @@
           <p title="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">bbbbbbbbbbbbbbbbbbbbbbbbb</p>
         </div>
 
-        <table class="equip-load pull-right clearfix">
+        <table class="equip-load equip-load-mouth pull-right clearfix">
           <caption class="text-primary">第一月（<b>x月</b>）设备负载情况</caption>
           <thead>
             <tr>
@@ -283,7 +133,7 @@
              </tr>
            </tbody> 
         </table>
-        <table class="equip-load pull-right clearfix">
+        <table class="equip-load equip-load-mouth pull-right clearfix">
           <caption class="text-primary">第二月（<b>y月</b>）设备负载情况</caption>
           <thead>
             <tr>
@@ -374,6 +224,15 @@
           </tbody>
         </table>
 
+        <div class="equip-status equip-status-float pull-left">
+          <span class="status-label pull-left">设备维护：</span>
+          <span class="pull-left equip-repair"></span>
+          <span class="status-label pull-left">设备占用：</span>
+          <span class="pull-left equip-occupy"></span>
+          <span class="status-label pull-left">设备空闲：</span>
+          <span class="pull-left equip-free"></span>
+        </div>
+
         <a class="subject-detail-btn btn btn-info" href="">科目预估细节</a>
 
         <div class="equip-info pull-left clearfix">
@@ -383,7 +242,7 @@
           <p title="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">bbbbbbbbbbbbbbbbbbbbbbbbb</p>
         </div>
 
-        <table class="equip-load pull-right clearfix">
+        <table class="equip-load equip-load-mouth pull-right clearfix">
           <caption class="text-primary">第一月（<b>x月</b>）设备负载情况</caption>
           <thead>
             <tr>
@@ -456,7 +315,7 @@
              </tr>
            </tbody> 
         </table>
-        <table class="equip-load pull-right clearfix">
+        <table class="equip-load equip-load-mouth pull-right clearfix">
           <caption class="text-primary">第二月（<b>y月</b>）设备负载情况</caption>
           <thead>
             <tr>
@@ -547,6 +406,15 @@
           </tbody>
         </table>
 
+        <div class="equip-status equip-status-float pull-left">
+          <span class="status-label pull-left">设备维护：</span>
+          <span class="pull-left equip-repair"></span>
+          <span class="status-label pull-left">设备占用：</span>
+          <span class="pull-left equip-occupy"></span>
+          <span class="status-label pull-left">设备空闲：</span>
+          <span class="pull-left equip-free"></span>
+        </div>
+
         <a class="subject-detail-btn btn btn-info" href="">科目预估细节</a>
 
         <div class="equip-info pull-left clearfix">
@@ -556,7 +424,7 @@
           <p title="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">bbbbbbbbbbbbbbbbbbbbbbbbb</p>
         </div>
 
-        <table class="equip-load pull-right clearfix">
+        <table class="equip-load equip-load-mouth pull-right clearfix">
           <caption class="text-primary">第一月（<b>x月</b>）设备负载情况</caption>
           <thead>
             <tr>
@@ -629,7 +497,7 @@
              </tr>
            </tbody> 
         </table>
-        <table class="equip-load pull-right clearfix">
+        <table class="equip-load equip-load-mouth pull-right clearfix">
           <caption class="text-primary">第二月（<b>y月</b>）设备负载情况</caption>
           <thead>
             <tr>
@@ -703,20 +571,13 @@
            </tbody>
         </table>
       </div><!--.experimentItem end-->
-
+      <br>
     </div><!-- experimentItemSet end-->
 
     <div class="experiment-footer well">
       <a class="btn btn-warning pull-right" href="">按预估时间重置</a>
       <a class="btn btn-info pull-right" href="">保留原来的时间设置</a>
-      <div class="equip-status pull-left hidden-xs">
-          <span class="status-label pull-left">设备维护：</span>
-          <span class="pull-left equip-repair"></span>
-          <span class="status-label pull-left">设备占用：</span>
-          <span class="pull-left equip-occupy"></span>
-          <span class="status-label pull-left">设备空闲：</span>
-          <span class="pull-left equip-free"></span>
-        </div>
+      
     </div>
   </body>
 </html>

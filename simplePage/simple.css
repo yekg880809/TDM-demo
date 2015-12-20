@@ -1,0 +1,344 @@
+body{
+         min-width: 955px;
+         font-family: "微软雅黑";
+      }
+
+      .experiment-title{
+        padding: 5px auto 5px 20px;
+        margin: 20px auto 10px;
+        text-indent: 20px;
+      }
+
+      .experiment-title span{
+        margin-right: 20px;
+      }
+
+      .experiment-detail i{
+        font-size: 16px;
+        color: red;
+      }
+
+      .experiment-detail select,.experiment-detail input{
+        margin:0 10px;
+      }
+
+      .experiment-itemSet{
+        min-width: 955px;
+        position: absolute;
+        width: 100%;
+        top:135px;
+        bottom: 60px;
+        overflow: auto;
+      }
+
+      .experiment-item{
+        min-width: 98%;
+        position: relative;
+        margin: 0 10px 10px;
+        overflow: hidden;
+      }
+
+      .experiment-itemSet .experiment-item{
+        top: 0px;
+        bottom: 30px;
+      }
+
+      .experiment-item .subject-info{
+        width: 200px;
+        margin: 10px auto 10px 10px;
+        border: 1px solid #ddd;
+      }
+
+      .experiment-item .tips-info{
+        width: 900px;
+        margin: 10px auto 10px 10px;
+        border: 0 none;
+        font-size: 0.8em;
+      }
+
+      .experiment-item .tips-info span{
+        display: inline-block;
+        width: 110px;
+        height: 20px;
+        font-size: 0.8em;
+      }
+
+      .experiment-item .tips-info span.tip-status{
+        margin-right: 10px;
+        width: 50px;
+        font-size: 0.8em;
+        border: 1px solid #ddd;
+      }
+
+      .subject-info th{
+        padding: 5px 50px;
+        text-align: center;
+      }
+
+      .experiment-item .subject-mark{\
+        margin: 10px 0.9%;
+        border: 1px solid #ddd;
+        width: 99%;
+        border: 0 none;
+      }
+
+      .experiment-item .subject-mark tbody{
+        display: inline-block;
+        width: 100%;
+        margin: 5px 0 0 0 ;  
+      }
+
+      .experiment-item .subject-mark tbody tr{
+        display: inline-block;
+        width: 100%;
+      }
+
+      .experiment-item .subject-mark th,.experiment-item .subject-mark td{
+        display: inline-block;
+        width: 19.5%;
+        border: 0 none;
+        background-color: #f5f5f5;
+        text-align: center;
+
+      }
+
+      .subject-info > tbody > tr > td{
+        padding: 5px 20px;
+        text-align: center;
+        background-color: #fff;
+      }
+
+      .equip-status{
+        margin: 30px;
+      }
+
+      .equip-status-float{
+        margin-top: 35px;
+        margin-left: 30px;
+      }
+
+      .equip-status .status-label{
+        margin-right: 0px;
+      }
+
+      .equip-status .status-label + span.long-block{
+        width:200px;
+      }
+
+      .equip-status .status-label + span{
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-top: -5px;
+        margin-right: 20px;
+        border: 1px solid #ddd;
+        float: left;
+      }
+
+      .experiment-item .equip-load{
+
+      }
+
+      .equip-load-mouth{
+        width: 76%;
+        margin-right:2%;
+        margin-bottom:10px; 
+        font-size: 0.68em;
+      }
+
+      .equip-load-week{
+        width: 47%;
+        margin:0 3% 0 2%; 
+      }
+
+      .equip-load-week + .equip-load-week{
+        margin:0 0 0 3%; 
+      }
+
+      .equip-load-mouth caption{
+        font-size: 1.4em;
+        text-indent: 5px;
+      }
+
+      .equip-load-week caption{
+        font-size: 1.2em;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+
+      .equip-load-mouth tr{
+        display: inline-block;
+        width: 100%;
+        margin: 0px 20px 5px 0;
+      }
+
+      .equip-load-week tr{
+        display: inline-block;
+        width: 100%;
+        margin: 0px 20px 5px 0;
+      }
+
+      .equip-load-mouth th,.equip-load-mouth td{
+        display: block;
+        width: 2.81%;
+        height: 23px;
+        padding-top: 0.3em;
+        border: 1px solid #ddd;
+        text-align: center;
+        margin: 0 0.2%;
+        float: left;
+      }
+
+      .equip-load-week > thead > tr > th,.equip-load-week > tbody > tr > td{
+        display: inline-block;
+        width: 13.2%;
+        height: 30px;
+        border: 0 none;
+        text-align: center;
+        vertical-align: middle;
+        background-color: #f5f5f5;
+      }
+
+      .equip-load-mouth th{
+        background-color: #f5f5f5;
+        color: #111;
+      }
+
+      .equip-load-mouth tbody,.equip-load-week tbody{
+        cursor: pointer;
+      }
+
+
+      .equip-info{
+        width: 20%;
+        height: 187px;
+        overflow: hidden;
+        margin: 0px 5px 10px 10px;
+        border: 1px solid #ddd;
+        clear:both;
+      }
+
+      .equip-info p{
+        padding: 5px 10px;
+        font-size: 15px;
+        word-wrap: break-word; 
+      }
+
+      .subject-detail-btn{
+        position: absolute;
+        top: 29px;
+        right: 30px;
+      }
+
+      .experiment-footer{
+        min-width: 100%;
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        margin-bottom: 0px;
+        box-shadow: 2px 1px 1px #ddd;
+        background-color: #0d394f;
+        color: #fff;
+      }
+
+      .rollplan{
+        width: 955px;
+        min-width: 100%;
+        overflow: hidden;
+      }
+
+      .rollplan-item{
+        list-style-type:none; 
+        margin-left: -40px;
+        padding:10px;
+      }
+
+      .rollplan-item div, .rollplan-item table{
+        display: inline-block; 
+        height: 160px;
+        margin-right: 0.5%;
+        top: 10px;
+        vertical-align: bottom;
+      }
+
+      .rollplan-item .rollplan-item-check{
+        width: 7%;
+        margin-top: -10px;
+        background-color: #f5f5f5;
+      }
+      .rollplan-item .rollplan-item-info{
+        width: 15%;
+        background-color: #f5f5f5;
+      }
+      .rollplan-item .rollplan-item-chart{
+        width: 75.1%;
+        border: 0 none;
+        margin: 0 1.4% 0 0;
+        float: right;
+      }
+      .rollplan-item-chart thead,.rollplan-item-chart tbody{
+        display: inline-block;
+        width: 100%;
+        height: 2.6em;
+        margin-bottom: 5px;
+      }
+      .rollplan-item-chart tr{
+        width: 100%;
+        height: 2.6em;
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+      .rollplan-item .rollplan-item-chart caption{
+        display: inline-block;
+        margin-bottom: 5px;
+        width: 100%;
+        text-align: center;
+      }
+      .rollplan-item .rollplan-item-chart th,.rollplan-item .rollplan-item-chart td{
+        display: block;
+        font-size: 0.6em;
+        width: 2.72%;
+        height: 100%;
+        border: 0 none;
+        background-color: #f5f5f5;
+        text-align: center;
+        padding: 1.2em 0.5em;
+        margin-right: 0.5%;
+        float:left;
+      }
+
+      .experiment-footer a{
+        margin-right: 10px;
+        margin-left: 0px;
+      }
+
+      .default-color{
+        background-color: #f5f5f5;
+      }
+
+      .equip-empty{
+        background-color: #fff;
+      }
+
+      .equip-occupy{
+        background-color: #f2572d;
+      }
+
+      .equip-repair{
+        background-color: #bbb;
+      }
+
+      .equip-free{
+        background-color: #fff;
+      }
+
+      .need-margin{
+        margin: 10px 20px;
+      }
+
+      .tips{
+        cursor: pointer;
+        text-indent: 0px;
+      }

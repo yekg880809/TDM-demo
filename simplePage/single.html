@@ -9,9 +9,10 @@
     <title>Demo page</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- custom -->
+    <link rel="stylesheet" href="simple.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,6 +23,205 @@
     <![endif]-->
   </head>
   <body>
-    
+    <h4 class="experiment-title page-header"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>一般信息</h4>
+    <div class="experiment-item panel panel-default">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th class="default-color">任务号</th>
+            <th class="default-color">试验科目</th>
+            <th class="default-color">试验设备</th>
+            <th class="default-color">试验类别</th>
+            <th class="default-color">预期试验时间</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>xxxxxxx</td>
+            <td>同步器单体实验</td>
+            <td>TG－8同步器性能试验台</td>
+            <td>台架试验</td>
+            <td>2015年7月31日</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h4 class="experiment-title page-header"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>试验时间评估（按设备负载）</h4>
+    <div class="experiment-item panel panel-default">
+      <p class="experiment-detail need-margin">您输入的科目完成时间为<i>xxxx年xx月xx日</i>，按设备负载情况评估，可行的科目完成时间为<i>xxxx年xx月xx日</i>，建议您更改试验时间设置。</p>
+      <table class="equip-load equip-load-week table table-bordered pull-left clearfix">
+        <caption>第一月（x月）设备负载情况</caption>
+        <thead>
+          <tr>
+            <th>日</th>
+            <th>一</th>
+            <th>二</th>
+            <th>三</th>
+            <th>四</th>
+            <th>五</th>
+            <th>六</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="equip-load equip-load-week table table-bordered">
+        <caption>第二月（y月）设备负载情况</caption>
+        <thead>
+          <tr>
+            <th>日</th>
+            <th>一</th>
+            <th>二</th>
+            <th>三</th>
+            <th>四</th>
+            <th>五</th>
+            <th>六</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="equip-status clearfix">
+        <span class="status-label pull-left">设备空闲：</span>
+        <span class="pull-left long-block equip-free"></span>
+        <span class="status-label pull-left">设备维护：</span>
+        <span class="pull-left long-block equip-repair"></span>
+      </div>
+      <p class="experiment-detail need-margin">已安排的其他科目：</p>
+      <table class="subject-mark table table-bordered">
+        <thead>
+          <tr>
+            <th>试验任务:<i>xxxxxxx</i></th>
+            <th>试验任务:<i>sssssss</i></th>
+            <th>试验任务:<i>sssssss</i></th>
+            <th>试验任务:<i>swwwwww</i></th>
+            <th>试验任务:<i>sssssss</i></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="background:#ccff11;">&nbsp;</td>
+            <td style="background:#cb1111;">&nbsp;</td>
+            <td style="background:#11f441;">&nbsp;</td>
+            <td style="background:#fcfc14;">&nbsp;</td>
+            <td style="background:#cc1ff5;">&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br><br><br><br>
+    <div class="experiment-footer well">
+      <a class="btn btn-warning pull-right" href="">按预估时间重置</a>
+      <a class="btn btn-info pull-right" href="">保留原来的时间设置</a>  
+    </div>
   </body>
 </html>
