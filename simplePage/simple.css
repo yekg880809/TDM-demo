@@ -1,344 +1,587 @@
 body{
-         min-width: 955px;
-         font-family: "微软雅黑";
-      }
+   min-width: 955px;
+   font-family: "微软雅黑";
+}
 
-      .experiment-title{
-        padding: 5px auto 5px 20px;
-        margin: 20px auto 10px;
-        text-indent: 20px;
-      }
+.experiment-title{
+  padding: 5px auto 5px 20px;
+  margin: 20px auto 10px;
+  text-indent: 20px;
+}
 
-      .experiment-title span{
-        margin-right: 20px;
-      }
+.experiment-title span{
+  margin-right: 20px;
+}
 
-      .experiment-detail i{
-        font-size: 16px;
-        color: red;
-      }
+.experiment-detail i{
+  font-size: 16px;
+  color: red;
+}
 
-      .experiment-detail select,.experiment-detail input{
-        margin:0 10px;
-      }
+.experiment-detail select,.experiment-detail input{
+  margin:0 10px;
+}
 
-      .experiment-itemSet{
-        min-width: 955px;
-        position: absolute;
-        width: 100%;
-        top:135px;
-        bottom: 60px;
-        overflow: auto;
-      }
+.experiment-itemSet{
+  min-width: 955px;
+  position: absolute;
+  width: 100%;
+  top:135px;
+  bottom: 60px;
+  overflow: auto;
+}
 
-      .experiment-item{
-        min-width: 98%;
-        position: relative;
-        margin: 0 10px 10px;
-        overflow: hidden;
-      }
+.experiment-item{
+  min-width: 98%;
+  position: relative;
+  margin: 0 10px 10px;
+  overflow: hidden;
+}
 
-      .experiment-itemSet .experiment-item{
-        top: 0px;
-        bottom: 30px;
-      }
+.experiment-itemSet .experiment-item{
+  min-width: 98%;
+  top: 0px;
+  bottom: 30px;
+}
 
-      .experiment-item .subject-info{
-        width: 200px;
-        margin: 10px auto 10px 10px;
-        border: 1px solid #ddd;
-      }
+.experiment-item .subject-info{
+  width: 200px;
+  margin: 10px auto 10px 10px;
+  border: 1px solid #ddd;
+}
 
-      .experiment-item .tips-info{
-        width: 900px;
-        margin: 10px auto 10px 10px;
-        border: 0 none;
-        font-size: 0.8em;
-      }
+.experiment-item .tips-info{
+  width: 900px;
+  margin: 10px auto 10px 10px;
+  border: 0 none;
+  font-size: 0.8em;
+}
 
-      .experiment-item .tips-info span{
-        display: inline-block;
-        width: 110px;
-        height: 20px;
-        font-size: 0.8em;
-      }
+.experiment-item .tips-info span{
+  display: inline-block;
+  width: 110px;
+  height: 20px;
+  font-size: 0.8em;
+}
 
-      .experiment-item .tips-info span.tip-status{
-        margin-right: 10px;
-        width: 50px;
-        font-size: 0.8em;
-        border: 1px solid #ddd;
-      }
+.experiment-item .tips-info span.tip-status{
+  margin-right: 10px;
+  width: 50px;
+  font-size: 0.8em;
+}
 
-      .subject-info th{
-        padding: 5px 50px;
-        text-align: center;
-      }
+.subject-info th{
+  padding: 5px 50px;
+  text-align: center;
+}
 
-      .experiment-item .subject-mark{\
-        margin: 10px 0.9%;
-        border: 1px solid #ddd;
-        width: 99%;
-        border: 0 none;
-      }
+.experiment-item .subject-mark{
+  margin: 10px 0.9%;
+  border: 1px solid #ddd;
+  width: 99%;
+  border: 0 none;
+}
 
-      .experiment-item .subject-mark tbody{
-        display: inline-block;
-        width: 100%;
-        margin: 5px 0 0 0 ;  
-      }
+.experiment-item .subject-mark tbody{
+  display: inline-block;
+  width: 100%;
+  margin: 5px 0 0 0 ;  
+}
 
-      .experiment-item .subject-mark tbody tr{
-        display: inline-block;
-        width: 100%;
-      }
+.experiment-item .subject-mark tbody tr{
+  display: inline-block;
+  width: 100%;
+}
 
-      .experiment-item .subject-mark th,.experiment-item .subject-mark td{
-        display: inline-block;
-        width: 19.5%;
-        border: 0 none;
-        background-color: #f5f5f5;
-        text-align: center;
+.experiment-item .subject-mark th,.experiment-item .subject-mark td{
+  display: inline-block;
+  width: 19.5%;
+  border: 0 none;
+  background-color: #f5f5f5;
+  text-align: center;
 
-      }
+}
 
-      .subject-info > tbody > tr > td{
-        padding: 5px 20px;
-        text-align: center;
-        background-color: #fff;
-      }
+.subject-info > tbody > tr > td{
+  padding: 5px 20px;
+  text-align: center;
+  background-color: #fff;
+}
 
-      .equip-status{
-        margin: 30px;
-      }
+.equip-status{
+  margin: 30px;
+}
 
-      .equip-status-float{
-        margin-top: 35px;
-        margin-left: 30px;
-      }
+.equip-status-float{
+  margin-top: 35px;
+  margin-left: 30px;
+}
 
-      .equip-status .status-label{
-        margin-right: 0px;
-      }
+.equip-status .status-label{
+  margin-right: 0px;
+}
 
-      .equip-status .status-label + span.long-block{
-        width:200px;
-      }
+.equip-status .status-label + span.long-block{
+  width:200px;
+}
 
-      .equip-status .status-label + span{
-        display: block;
-        width: 30px;
-        height: 30px;
-        margin-top: -5px;
-        margin-right: 20px;
-        border: 1px solid #ddd;
-        float: left;
-      }
+.equip-status .status-label + span{
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-top: -5px;
+  margin-right: 20px;
+  border: 1px solid #ddd;
+  float: left;
+}
 
-      .experiment-item .equip-load{
+.experiment-item .equip-load{
 
-      }
+}
 
-      .equip-load-mouth{
-        width: 76%;
-        margin-right:2%;
-        margin-bottom:10px; 
-        font-size: 0.68em;
-      }
+.equip-load-mouth{
+  width: 76%;
+  margin-right:2%;
+  margin-bottom:10px; 
+  font-size: 0.68em;
+}
 
-      .equip-load-week{
-        width: 47%;
-        margin:0 3% 0 2%; 
-      }
+.equip-load-week{
+  width: 47%;
+  margin:0 3% 0 2%; 
+}
 
-      .equip-load-week + .equip-load-week{
-        margin:0 0 0 3%; 
-      }
+.equip-load-week + .equip-load-week{
+  margin:0 0 0 3%; 
+}
 
-      .equip-load-mouth caption{
-        font-size: 1.4em;
-        text-indent: 5px;
-      }
+.equip-load-mouth caption{
+  font-size: 1.4em;
+  text-indent: 5px;
+}
 
-      .equip-load-week caption{
-        font-size: 1.2em;
-        text-align: center;
-        margin-bottom: 5px;
-      }
+.equip-load-week caption{
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 5px;
+}
 
-      .equip-load-mouth tr{
-        display: inline-block;
-        width: 100%;
-        margin: 0px 20px 5px 0;
-      }
+.equip-load-mouth tr{
+  display: inline-block;
+  width: 100%;
+  margin: 0px 20px 5px 0;
+}
 
-      .equip-load-week tr{
-        display: inline-block;
-        width: 100%;
-        margin: 0px 20px 5px 0;
-      }
+.equip-load-week tr{
+  display: inline-block;
+  width: 100%;
+  margin: 0px 20px 5px 0;
+}
 
-      .equip-load-mouth th,.equip-load-mouth td{
-        display: block;
-        width: 2.81%;
-        height: 23px;
-        padding-top: 0.3em;
-        border: 1px solid #ddd;
-        text-align: center;
-        margin: 0 0.2%;
-        float: left;
-      }
+.equip-load-mouth th,.equip-load-mouth td{
+  display: block;
+  width: 2.81%;
+  height: 23px;
+  padding-top: 0.3em;
+  border: 1px solid #ddd;
+  text-align: center;
+  margin: 0 0.2%;
+  float: left;
+}
 
-      .equip-load-week > thead > tr > th,.equip-load-week > tbody > tr > td{
-        display: inline-block;
-        width: 13.2%;
-        height: 30px;
-        border: 0 none;
-        text-align: center;
-        vertical-align: middle;
-        background-color: #f5f5f5;
-      }
+.equip-load-week > thead > tr > th,.equip-load-week > tbody > tr > td{
+  display: inline-block;
+  width: 13.2%;
+  height: 30px;
+  border: 0 none;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f5f5f5;
+}
 
-      .equip-load-mouth th{
-        background-color: #f5f5f5;
-        color: #111;
-      }
+.equip-load-mouth th{
+  background-color: #f5f5f5;
+  color: #111;
+}
 
-      .equip-load-mouth tbody,.equip-load-week tbody{
-        cursor: pointer;
-      }
+.equip-load-mouth tbody,.equip-load-week tbody{
+  cursor: pointer;
+}
 
 
-      .equip-info{
-        width: 20%;
-        height: 187px;
-        overflow: hidden;
-        margin: 0px 5px 10px 10px;
-        border: 1px solid #ddd;
-        clear:both;
-      }
+.equip-info{
+  width: 20%;
+  height: 187px;
+  overflow: hidden;
+  margin: 0px 5px 10px 10px;
+  border: 1px solid #ddd;
+  clear:both;
+}
 
-      .equip-info p{
-        padding: 5px 10px;
-        font-size: 15px;
-        word-wrap: break-word; 
-      }
+.equip-info p{
+  padding: 5px 10px;
+  font-size: 15px;
+  word-wrap: break-word; 
+}
 
-      .subject-detail-btn{
-        position: absolute;
-        top: 29px;
-        right: 30px;
-      }
+.subject-detail-btn{
+  position: absolute;
+  top: 29px;
+  right: 30px;
+}
 
-      .experiment-footer{
-        min-width: 100%;
-        position: fixed;
-        width: 100%;
-        bottom: 0px;
-        right: 0px;
-        left: 0px;
-        margin-bottom: 0px;
-        box-shadow: 2px 1px 1px #ddd;
-        background-color: #0d394f;
-        color: #fff;
-      }
+.experiment-footer{
+  min-width: 100%;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  margin-bottom: 0px;
+  box-shadow: 2px 1px 1px #ddd;
+  background-color: #0d394f;
+  color: #fff;
+}
 
-      .rollplan{
-        width: 955px;
-        min-width: 100%;
-        overflow: hidden;
-      }
+/*
+ * 滚动计划单元
+ */
+.rollplan{
+  width: 955px;
+  min-width: 100%;
+  overflow: hidden;
+}
 
-      .rollplan-item{
-        list-style-type:none; 
-        margin-left: -40px;
-        padding:10px;
-      }
+.rollplan-item{
+  list-style-type:none; 
+  margin-left: -40px;
+  padding:10px;
+}
 
-      .rollplan-item div, .rollplan-item table{
-        display: inline-block; 
-        height: 160px;
-        margin-right: 0.5%;
-        top: 10px;
-        vertical-align: bottom;
-      }
+.rollplan-item div, .rollplan-item table{
+  display: inline-block; 
+  height: 160px;
+  margin-right: 0.5%;
+  top: 10px;
+  vertical-align: bottom;
+}
 
-      .rollplan-item .rollplan-item-check{
-        width: 7%;
-        margin-top: -10px;
-        background-color: #f5f5f5;
-      }
-      .rollplan-item .rollplan-item-info{
-        width: 15%;
-        background-color: #f5f5f5;
-      }
-      .rollplan-item .rollplan-item-chart{
-        width: 75.1%;
-        border: 0 none;
-        margin: 0 1.4% 0 0;
-        float: right;
-      }
-      .rollplan-item-chart thead,.rollplan-item-chart tbody{
-        display: inline-block;
-        width: 100%;
-        height: 2.6em;
-        margin-bottom: 5px;
-      }
-      .rollplan-item-chart tr{
-        width: 100%;
-        height: 2.6em;
-        display: inline-block;
-        margin-bottom: 5px;
-      }
-      .rollplan-item .rollplan-item-chart caption{
-        display: inline-block;
-        margin-bottom: 5px;
-        width: 100%;
-        text-align: center;
-      }
-      .rollplan-item .rollplan-item-chart th,.rollplan-item .rollplan-item-chart td{
-        display: block;
-        font-size: 0.6em;
-        width: 2.72%;
-        height: 100%;
-        border: 0 none;
-        background-color: #f5f5f5;
-        text-align: center;
-        padding: 1.2em 0.5em;
-        margin-right: 0.5%;
-        float:left;
-      }
+.rollplan-item .rollplan-item-check{
+  width: 7%;
+  margin-top: -10px;
+  background-color: #5bc0de;
+}
+.rollplan-item .rollplan-item-check input{
+  margin:70px 44%;
+}
+.rollplan-item .rollplan-item-info{
+  width: 15%;
+  background-color: #f3df66;
+  padding: 10px;
+}
+.rollplan-item .rollplan-item-info .tle{
+  color: purple;
+}
+.rollplan-item .rollplan-item-chart{
+  width: 75.1%;
+  border: 0 none;
+  margin: 0 1.4% 0 0;
+  float: right;
+}
+.rollplan-item-chart thead,.rollplan-item-chart tbody{
+  display: inline-block;
+  width: 100%;
+  height: 2.6em;
+  margin-bottom: 5px;
+}
+.rollplan-item-chart tr{
+  width: 100%;
+  height: 2.6em;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.rollplan-item .rollplan-item-chart caption{
+  display: inline-block;
+  margin-bottom: 5px;
+  width: 99.3%;
+  background-color: #dfdfdf;
+  text-align: center;
+  color: #111;
+  margin-right: 20px;
+}
+.rollplan-item .rollplan-item-chart th,.rollplan-item .rollplan-item-chart td{
+  display: block;
+  font-size: 0.6em;
+  width: 2.72%;
+  height: 100%;
+  border: 0 none;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 1.2em 0.5em;
+  margin-right: 0.5%;
+  float:left;
+}
 
-      .experiment-footer a{
-        margin-right: 10px;
-        margin-left: 0px;
-      }
+.rollplan-item .rollplan-item-chart td{
+  padding: 1.2em 0;
+}
 
-      .default-color{
-        background-color: #f5f5f5;
-      }
+.rollplan-item .rollplan-item-chart th{
+  background-color: #dfdfdf;
+}
 
-      .equip-empty{
-        background-color: #fff;
-      }
+.rollplan-item .rollplan-item-chart td span{
+  top:-80%;
+  left: 40%;
+  height: 120%;
+}
 
-      .equip-occupy{
-        background-color: #f2572d;
-      }
+.rollplan-item .rollplan-item-chart td span.interval-1{
+  width: 5%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-2{
+  width: 135.5%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-3{
+  width: 260%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-4{
+  width: 370%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-5{
+  width: 490%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-6{
+  width: 610%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-7{
+  width: 730%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-8{
+  width: 845%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-9{
+  width: 960%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-10{
+  width: 1080%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-11{
+  width: 1200%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-12{
+  width: 1318%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-13{
+  width: 1440%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-14{
+  width: 1555%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-15{
+  width: 1670%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-16{
+  width: 1796%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-17{
+  width: 1915%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-18{
+  width: 2030%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-19{
+  width: 2150%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-20{
+  width: 2270%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-21{
+  width: 2390%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-22{
+  width: 2510%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-23{
+  width: 2625%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-24{
+  width: 2740%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-25{
+  width: 2860%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-26{
+  width: 2980%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-27{
+  width: 3095%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-28{
+  width: 3215%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-29{
+  width: 3335%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-30{
+  width: 3450%;
+}
+.rollplan-item .rollplan-item-chart td span.interval-31{
+  width: 3570%;
+}
 
-      .equip-repair{
-        background-color: #bbb;
-      }
 
-      .equip-free{
-        background-color: #fff;
-      }
+/*
+ * 页面按钮组
+ */
+.experiment-footer a{
+  margin-right: 10px;
+  margin-left: 0px;
+}
 
-      .need-margin{
-        margin: 10px 20px;
-      }
+/*
+ * 试验时间评估按月显示时的标记颜色
+ */
 
-      .tips{
-        cursor: pointer;
-        text-indent: 0px;
-      }
+.default-color{
+  background-color: #f5f5f5;
+}
+
+.equip-empty{
+  background-color: #fff;
+}
+
+.equip-occupy{
+  background-color: #f2572d;
+}
+
+.equip-repair{
+  background-color: #bbb;
+}
+
+.equip-free{
+  background-color: #fff;
+}
+
+.need-margin{
+  margin: 10px 20px;
+}
+
+.tips{
+  cursor: pointer;
+  text-indent: 0px;
+}
+
+/*
+ * 滚动计划状态说明
+ */
+
+/*通用*/
+.tip-status{
+  display: block;
+  position: relative;
+}
+
+.tip-status i{
+  display: block;
+  position: absolute;
+  height: 50%;
+  top: 25%;
+  left: 1px;
+}
+
+.tip-status-example i{
+  width: 50%;
+}
+.tip-status i.interval-1{
+  width: 11%;
+}
+
+/*任务计划安排*/
+.task-a{
+  background-color: #11a1fd;
+  border:2px solid #11a1fd;
+}
+
+/*任务未启动*/
+.task-s{
+  background-color: #11ffcc;
+  border: 2px solid blue;
+}
+
+/*任务正常*/
+.task-n{
+  background-color: #11ff22;
+  border: 2px solid green;
+}
+
+.task-n i{
+  background-color: green;
+}
+
+/*任务终止恢复*/
+.task-r{
+  background-color: #11ff22;
+  border: 2px solid red;
+}
+
+.task-r i{
+  background-color: green;
+}
+
+/*试件失效终止*/
+.test-piece-s{
+  background-color: #ffcc11;
+  border: 2px solid red;
+}
+
+.test-piece-s i{
+  background-color: red;
+}
+
+/*试件失效恢复*/
+.test-piece-r{
+  background-color: #ffcc11;
+  border: 2px solid red;
+}
+
+.test-piece-r i{
+  background-color: green;
+}
+
+/*设备故障终止*/
+.equip-s{
+  background-color: #fff;
+  border: 2px solid red;
+}
+
+.equip-s i{
+  background-color: red;
+}
+
+/*设备故障恢复*/
+.equip-r{
+  background-color: #fff;
+  border: 2px solid red;
+}
+
+.equip-r i{
+  background-color: green;
+}
+
+/*试验取消或终止*/
+.test-s{
+  background-color: #fff;
+  border: 2px solid red;
+}
+
+/*取消失效或故障的任务*/
+.test-c{
+  background-color: #ccc;
+  border: 2px solid red;
+}
+
+.test-c i{
+  background-color: #aaa;
+  border: 1px solid red;
+}

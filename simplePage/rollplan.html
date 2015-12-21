@@ -45,23 +45,30 @@
     <h4 class="experiment-title page-header"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>滚动计划<a tabindex="0"  class="tips pull-right" role="button" data-toggle="popover" data-trigger="click" data-delay="200" data-placement="left" data-content="点击色块可查看任务细节"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></h4>
     <div class="experiment-item panel panel-default">
       <div class="tips-info">
-        <span class="tip-status">&nbsp;</span><span>计划任务安排</span>
-        <span class="tip-status">&nbsp;</span><span>任务正常</span>
-        <span class="tip-status">&nbsp;</span><span>试件失效终止</span>
-        <span class="tip-status">&nbsp;</span><span>设备故障终止</span>
-        <span class="tip-status">&nbsp;</span><span>试验取消终止</span>
+        <span class="tip-status tip-status-example task-a">&nbsp;</span><span>计划任务安排</span>
+        <span class="tip-status tip-status-example task-n">&nbsp;<i></i></span><span>任务正常</span>
+        <span class="tip-status tip-status-example test-piece-s">&nbsp;<i></i></span><span>试件失效终止</span>
+        <span class="tip-status tip-status-example equip-s">&nbsp;<i></i></span><span>设备故障终止</span>
+        <span class="tip-status tip-status-example test-s">&nbsp;</span><span>试验取消 / 终止</span>
         <br>
-        <span class="tip-status">&nbsp;</span><span>任务未启动</span>
-        <span class="tip-status">&nbsp;</span><span>任务终止恢复</span>
-        <span class="tip-status">&nbsp;</span><span>试件失效恢复</span>
-        <span class="tip-status">&nbsp;</span><span>设备故障恢复</span>
-        <span class="tip-status">&nbsp;</span><span>取消实效或故障终止的任务</span>
+        <span class="tip-status tip-status-example task-s">&nbsp;</span><span>任务未启动</span>
+        <span class="tip-status tip-status-example task-r">&nbsp;<i></i></span><span>任务终止恢复</span>
+        <span class="tip-status tip-status-example test-piece-r">&nbsp;<i></i></span><span>试件失效恢复</span>
+        <span class="tip-status tip-status-example equip-r">&nbsp;<i></i></span><span>设备故障恢复</span>
+        <span class="tip-status tip-status-example test-c">&nbsp;<i></i></span><span>取消实效或故障终止的任务</span>
       </div>
 
       <ul class="rollplan">
         <li class="rollplan-item">
-          <div class="rollplan-item-check">a</div>
-          <div class="rollplan-item-info"></div>
+          <div class="rollplan-item-check">
+            <input type="checkbox">
+          </div>
+          <div class="rollplan-item-info">
+            <p class="tle">设备编号</p>
+            <p><a href="#">xxxxxxx</a></p>
+            <p class="tle">设备名称</p>
+            <p>偶哈大手大脚扫ID叫哦见哦赛季的</p>
+          </div>
           <table class="rollplan-item-chart table">
             <caption>计划第一月</caption>
             <thead>
@@ -101,7 +108,7 @@
             </thead>
             <tbody>
               <tr>
-                <td>&nbsp;</td>
+                <td>&nbsp;<span class="tip-status task-a interval-10">&nbsp;</span></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -134,7 +141,7 @@
                 <td>&nbsp;</td>
               </tr>
               <tr>
-                <td>&nbsp;</td>
+                <td>&nbsp;<span class="tip-status task-r interval-18"><i class="interval-1"></i></span></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
