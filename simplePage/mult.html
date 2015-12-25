@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>Demo page</title>
+    <title>mult page</title>
 
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -61,7 +61,7 @@
         </div>
 
         <table class="equip-load equip-load-mouth pull-right clearfix">
-          <caption class="text-primary">第一月（<b>x月</b>）设备负载情况</caption>
+          <caption class="text-primary">第一月（<b>1</b><strong>月</strong>）设备负载情况</caption>
           <thead>
             <tr>
               <th>1</th>
@@ -134,7 +134,7 @@
            </tbody> 
         </table>
         <table class="equip-load equip-load-mouth pull-right clearfix">
-          <caption class="text-primary">第二月（<b>y月</b>）设备负载情况</caption>
+          <caption class="text-primary">第二月（<b>y</b><strong>月</strong>）设备负载情况</caption>
           <thead>
             <tr>
               <th>1</th>
@@ -243,7 +243,7 @@
         </div>
 
         <table class="equip-load equip-load-mouth pull-right clearfix">
-          <caption class="text-primary">第一月（<b>x月</b>）设备负载情况</caption>
+          <caption class="text-primary">第一月（<b>12</b><strong>月</strong>）设备负载情况</caption>
           <thead>
             <tr>
               <th>1</th>
@@ -316,7 +316,7 @@
            </tbody> 
         </table>
         <table class="equip-load equip-load-mouth pull-right clearfix">
-          <caption class="text-primary">第二月（<b>y月</b>）设备负载情况</caption>
+          <caption class="text-primary">第二月（<b>y</b><strong>月</strong>）设备负载情况</caption>
           <thead>
             <tr>
               <th>1</th>
@@ -425,7 +425,7 @@
         </div>
 
         <table class="equip-load equip-load-mouth pull-right clearfix">
-          <caption class="text-primary">第一月（<b>x月</b>）设备负载情况</caption>
+          <caption class="text-primary">第一月（<b>4</b><strong>月</strong>）设备负载情况</caption>
           <thead>
             <tr>
               <th>1</th>
@@ -498,7 +498,7 @@
            </tbody> 
         </table>
         <table class="equip-load equip-load-mouth pull-right clearfix">
-          <caption class="text-primary">第二月（<b>y月</b>）设备负载情况</caption>
+          <caption class="text-primary">第二月（<b>y</b><strong>月</strong>）设备负载情况</caption>
           <thead>
             <tr>
               <th>1</th>
@@ -575,9 +575,17 @@
     </div><!-- experimentItemSet end-->
 
     <div class="experiment-footer well">
-      <a class="btn btn-warning pull-right" href="">按预估时间重置</a>
-      <a class="btn btn-info pull-right" href="">保留原来的时间设置</a>
-      
+      <a class="btn btn-warning " href="">按预估时间重置</a>
+      <a class="btn btn-info " href="">保留原来的时间设置</a>
     </div>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="TDM-calendar.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+       $('.experiment-item').TDMCalendar('equipload');
+
+    });
+    </script>
   </body>
 </html>

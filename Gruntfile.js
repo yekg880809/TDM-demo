@@ -5,7 +5,7 @@ module.exports = function(grunt){
     connect: {
       options: {
         port: 9000,
-        hostname: '127.0.0.1', 
+        hostname: 'localhost', 
         livereload: 35729  
       },
 
@@ -64,7 +64,9 @@ module.exports = function(grunt){
 	          'css/{,*/}*.css',
 	          'js/{,*/}*.js',
 	          'template/*.html',
-	          'simplePage/*.html'
+	          'simplePage/*.html',
+	          'simplePage/*.css',
+	          'simplePage/*.js'
 	        ]
 	    }
 	}
