@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>Demo page</title>
+    <title>rollplan page</title>
 
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- custom -->
     <link rel="stylesheet" href="simple.css">
+    <link rel="stylesheet" href="ganttBar.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -118,7 +119,7 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>&nbsp;<<span class="tip-status task-a interval-10">&nbsp;</span></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -141,7 +142,7 @@
                 <td>&nbsp;</td>
               </tr>
               <tr>
-                <td>&nbsp;<span class="tip-status task-r interval-18"><i class="interval-1"></i></span></td>
+                <td>&nbsp;<span class="tip-status task-r interval-10"><i class="interval-1"></i></span></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -151,7 +152,7 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>&nbsp;<span class="tip-status test-piece-r interval-10"><i class="interval-1"></i></span></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -181,18 +182,17 @@
     </div>
     <br><br><br><br>
     <div class="experiment-footer well">
-      <a class="btn btn-warning pull-right" href="">导出Excel表格</a>
-      <a class="btn btn-info pull-right" href="">报告任务状态</a> 
-      <a class="btn btn-info pull-right" href="">调整任务计划</a>
-      <a class="btn btn-info pull-right" href="">临时任务安排</a> 
+      <a class="btn btn-warning" href="">导出Excel表格</a>
+      <a class="btn btn-info" href="">报告任务状态</a> 
+      <a class="btn btn-info" href="">调整任务计划</a>
+      <a class="btn btn-info" href="">临时任务安排</a> 
     </div>
 
     <script src="../js/jquery-1.9.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="TDM-rollplan.js"></script>
     <script>
-      $('.tips').on('click',function(){
-        $('.tips').popover('toggle');
-      });
+      $('.rollplan-item').TDMRollPlan();
     </script>
   </body>
 </html>

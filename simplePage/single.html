@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>Demo page</title>
+    <title>single page</title>
 
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -50,142 +50,142 @@
     <div class="experiment-item panel panel-default">
       <p class="experiment-detail need-margin">您输入的科目完成时间为<i>xxxx年xx月xx日</i>，按设备负载情况评估，可行的科目完成时间为<i>xxxx年xx月xx日</i>，建议您更改试验时间设置。</p>
       <table class="equip-load equip-load-week table table-bordered pull-left clearfix">
-        <caption>第一月（x月）设备负载情况</caption>
+        <caption>第一月（<b>12</b><strong>月</strong>）设备负载情况</caption>
         <thead>
           <tr>
-            <th>日</th>
+            <th class="weekend">日</th>
             <th>一</th>
             <th>二</th>
             <th>三</th>
             <th>四</th>
             <th>五</th>
-            <th>六</th>
+            <th class="weekend">六</th>
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td class="weekend"></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td class="weekend"></td>
           </tr>
           <tr>
+            <td class="weekend"></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td class="weekend"></td>
           </tr>
           <tr>
+            <td class="weekend"></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td class="weekend"></td>
           </tr>
           <tr>
+            <td class="weekend"></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td class="weekend"></td>
           </tr>
           <tr>
+            <td class="weekend"></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td class="weekend"></td>
           </tr>
           <tr>
+            <td class="weekend"></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td class="weekend"></td>
           </tr>
         </tbody>
       </table>
       <table class="equip-load equip-load-week table table-bordered">
-        <caption>第二月（y月）设备负载情况</caption>
+        <caption>第二月（<b>y</b><strong>月</strong>）设备负载情况</caption>
         <thead>
           <tr>
-            <th>日</th>
+            <th class="weekend">日</th>
             <th>一</th>
             <th>二</th>
             <th>三</th>
             <th>四</th>
             <th>五</th>
-            <th>六</th>
+            <th class="weekend">六</th>
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td class="weekend"></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td class="weekend"></td>
           </tr>
           <tr>
+            <td class="weekend"></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td class="weekend"></td>
           </tr>
           <tr>
+            <td class="weekend"></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td class="weekend"></td>
           </tr>
           <tr>
+            <td class="weekend"></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td class="weekend"></td>
           </tr>
           <tr>
+            <td class="weekend"></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td class="weekend"></td>
           </tr>
           <tr>
+            <td class="weekend"></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td class="weekend"></td>
           </tr>
         </tbody>
       </table>
@@ -220,8 +220,15 @@
     </div>
     <br><br><br><br>
     <div class="experiment-footer well">
-      <a class="btn btn-warning pull-right" href="">按预估时间重置</a>
-      <a class="btn btn-info pull-right" href="">保留原来的时间设置</a>  
+      <a class="btn btn-warning" href="">按预估时间重置</a>
+      <a class="btn btn-info" href="">保留原来的时间设置</a>  
     </div>
+
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="TDM-calendar.js"></script>
+    <script type="text/javascript">
+      $('.experiment-item').TDMCalendar('equipload4week');
+    </script>
   </body>
 </html>

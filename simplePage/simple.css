@@ -94,11 +94,13 @@ body{
 }
 
 .experiment-item .subject-mark th,.experiment-item .subject-mark td{
-  display: inline-block;
+  display: block;
   width: 19.5%;
+  margin: 0 0.2%;
   border: 0 none;
   background-color: #f5f5f5;
   text-align: center;
+  float: left;
 
 }
 
@@ -141,7 +143,7 @@ body{
 
 .equip-load-mouth{
   width: 76%;
-  margin-right:2%;
+  margin-right:1.5%;
   margin-bottom:10px; 
   font-size: 0.68em;
 }
@@ -171,6 +173,12 @@ body{
   width: 100%;
   margin: 0px 20px 5px 0;
 }
+.equip-load-mouth thead tr{
+  display: block\9;
+  width: 100%;
+  height: 28px\9;
+  padding-bottom: 5px\9; 
+}
 
 .equip-load-week tr{
   display: inline-block;
@@ -192,11 +200,16 @@ body{
 .equip-load-week > thead > tr > th,.equip-load-week > tbody > tr > td{
   display: inline-block;
   width: 13.2%;
-  height: 30px;
+  height: 35px;
   border: 0 none;
   text-align: center;
   vertical-align: middle;
   background-color: #f5f5f5;
+  border: 3px solid #fff\9;
+}
+
+.weekend{
+  color:red;
 }
 
 .equip-load-mouth th{
@@ -247,8 +260,9 @@ body{
  * 滚动计划单元
  */
 .rollplan{
-  width: 955px;
+  width: 900px;
   min-width: 100%;
+  min-width: 98%\9;
   overflow: hidden;
 }
 
@@ -265,6 +279,24 @@ body{
   top: 10px;
   vertical-align: bottom;
 }
+
+/*
+ * for ie8
+ */
+.rollplan-item div{
+  height: 145px\9;
+  overflow: hidden\9;
+}
+
+.rollplan-item table{
+  min-width: 20%\9;
+  height: 110px\9;
+}
+
+/*
+ * for ie8 end
+ */
+
 
 .rollplan-item .rollplan-item-check{
   width: 7%;
@@ -283,14 +315,19 @@ body{
   color: purple;
 }
 .rollplan-item .rollplan-item-chart{
-  width: 75.1%;
+  width: 76.4%;
+  min-width: 76.4%;
+  width: 75.1%\9;
+  min-width: 75.1%\9;
   border: 0 none;
-  margin: 0 1.4% 0 0;
+  margin: 0 0 0 0;
+  margin: 0 1.4% 0 0\9;
   float: right;
 }
 .rollplan-item-chart thead,.rollplan-item-chart tbody{
   display: inline-block;
   width: 100%;
+  min-width: 98%;
   height: 2.6em;
   margin-bottom: 5px;
 }
@@ -299,11 +336,16 @@ body{
   height: 2.6em;
   display: inline-block;
   margin-bottom: 5px;
+  padding-bottom: 0\9;
+
+  margin-bottom: 0\9;
+  width: 110%\9;
 }
 .rollplan-item .rollplan-item-chart caption{
   display: inline-block;
   margin-bottom: 5px;
   width: 99.3%;
+  min-width: 98%;
   background-color: #dfdfdf;
   text-align: center;
   color: #111;
@@ -323,6 +365,7 @@ body{
 }
 
 .rollplan-item .rollplan-item-chart td{
+  position: relative;
   padding: 1.2em 0;
 }
 
@@ -331,109 +374,21 @@ body{
 }
 
 .rollplan-item .rollplan-item-chart td span{
-  top:-80%;
+  position: absolute;
+  top:14%;
   left: 40%;
-  height: 120%;
+  height: 70%;
+  z-index: 1;
 }
-
-.rollplan-item .rollplan-item-chart td span.interval-1{
-  width: 5%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-2{
-  width: 135.5%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-3{
-  width: 260%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-4{
-  width: 370%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-5{
-  width: 490%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-6{
-  width: 610%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-7{
-  width: 730%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-8{
-  width: 845%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-9{
-  width: 960%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-10{
-  width: 1080%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-11{
-  width: 1200%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-12{
-  width: 1318%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-13{
-  width: 1440%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-14{
-  width: 1555%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-15{
-  width: 1670%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-16{
-  width: 1796%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-17{
-  width: 1915%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-18{
-  width: 2030%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-19{
-  width: 2150%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-20{
-  width: 2270%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-21{
-  width: 2390%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-22{
-  width: 2510%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-23{
-  width: 2625%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-24{
-  width: 2740%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-25{
-  width: 2860%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-26{
-  width: 2980%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-27{
-  width: 3095%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-28{
-  width: 3215%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-29{
-  width: 3335%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-30{
-  width: 3450%;
-}
-.rollplan-item .rollplan-item-chart td span.interval-31{
-  width: 3570%;
-}
-
 
 /*
  * 页面按钮组
  */
+.experiment-footer{
+  z-index:2;
+  padding-right:20px\9; 
+}
+
 .experiment-footer a{
   margin-right: 10px;
   margin-left: 0px;
@@ -493,14 +448,21 @@ body{
 .tip-status-example i{
   width: 50%;
 }
-.tip-status i.interval-1{
-  width: 11%;
-}
 
 /*任务计划安排*/
 .task-a{
   background-color: #11a1fd;
   border:2px solid #11a1fd;
+}
+
+.task-a div{
+  position:absolute;
+  width:100px;
+  height:30px;
+  left:-2px;
+  top:-30px;
+  z-index: 2;
+  display:none;
 }
 
 /*任务未启动*/
@@ -585,3 +547,4 @@ body{
   background-color: #aaa;
   border: 1px solid red;
 }
+
