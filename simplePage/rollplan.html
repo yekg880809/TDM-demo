@@ -14,6 +14,7 @@
     <!-- custom -->
     <link rel="stylesheet" href="simple.css">
     <link rel="stylesheet" href="ganttBar.css">
+    <link href="bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -119,7 +120,7 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;<<span class="tip-status task-a interval-10">&nbsp;</span></td>
+                <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -142,17 +143,17 @@
                 <td>&nbsp;</td>
               </tr>
               <tr>
-                <td>&nbsp;<span class="tip-status task-r interval-10"><i class="interval-1"></i></span></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
+                <td>&nbsp;<span class="tip-status task-a interval-10"></span></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;<span class="tip-status test-piece-r interval-10"><i class="interval-1"></i></span></td>
+                <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -178,7 +179,220 @@
           </table>
         </li>
       </ul>
-      
+        <div class="back-item back"></div>
+        <div class="back-item adjust-form">
+            <fieldset>
+                <div class="form-group">
+                    <label class="col-md-1 control-label" for="dtp_input1">开始时间</label>
+                    <div class="input-group date form_datetime col-md-5" data-link-field="dtp_input1" data-date-format="yyyy MM dd" data-date="2015-09-16T05:25:07Z">
+                        <input class="form-control" type="text" readonly="" value="" size="13">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </span>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </span>
+                    </div>
+                    <input id="dtp_input1" type="hidden" value="">
+                    <br>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-1 control-label" for="dtp_input1">结束时间</label>
+                    <div class="input-group date form_datetime col-md-5" data-link-field="dtp_input1" data-date-format="yyyy MM dd" data-date="2015-09-16T05:25:07Z">
+                        <input class="form-control" type="text" readonly="" value="" size="13">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </span>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </span>
+                    </div>
+                    <input id="dtp_input1" type="hidden" value="2015年-09-17日 10:50:07">
+                    <br>
+                </div>
+            </fieldset>
+            <a class="aclose btn btn-default">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </a>
+            <a class="fin btn btn-default"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="back-item adjust-load"></div>
+    </div>
+
+    <div class="experiment-item panel panel-default">
+      <div class="tips-info">
+        <span class="tip-status tip-status-example task-a">&nbsp;</span><span>计划任务安排</span>
+        <span class="tip-status tip-status-example task-n">&nbsp;<i></i></span><span>任务正常</span>
+        <span class="tip-status tip-status-example test-piece-s">&nbsp;<i></i></span><span>试件失效终止</span>
+        <span class="tip-status tip-status-example equip-s">&nbsp;<i></i></span><span>设备故障终止</span>
+        <span class="tip-status tip-status-example test-s">&nbsp;</span><span>试验取消 / 终止</span>
+        <br>
+        <span class="tip-status tip-status-example task-s">&nbsp;</span><span>任务未启动</span>
+        <span class="tip-status tip-status-example task-r">&nbsp;<i></i></span><span>任务终止恢复</span>
+        <span class="tip-status tip-status-example test-piece-r">&nbsp;<i></i></span><span>试件失效恢复</span>
+        <span class="tip-status tip-status-example equip-r">&nbsp;<i></i></span><span>设备故障恢复</span>
+        <span class="tip-status tip-status-example test-c">&nbsp;<i></i></span><span>取消实效或故障终止的任务</span>
+      </div>
+
+      <ul class="rollplan">
+        <li class="rollplan-item">
+          <div class="rollplan-item-check">
+            <input type="checkbox">
+          </div>
+          <div class="rollplan-item-info">
+            <p class="tle">设备编号</p>
+            <p><a href="#">xxxxxxx</a></p>
+            <p class="tle">设备名称</p>
+            <p>偶哈大手大脚扫ID叫哦见哦赛季的</p>
+          </div>
+          <table class="rollplan-item-chart table">
+            <caption>计划第一月</caption>
+            <thead>
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+                <th>11</th>
+                <th>12</th>
+                <th>13</th>
+                <th>14</th>
+                <th>15</th>
+                <th>16</th>
+                <th>17</th>
+                <th>18</th>
+                <th>19</th>
+                <th>20</th>
+                <th>21</th>
+                <th>22</th>
+                <th>23</th>
+                <th>24</th>
+                <th>25</th>
+                <th>26</th>
+                <th>27</th>
+                <th>28</th>
+                <th>29</th>
+                <th>30</th>
+                <th>31</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>&nbsp;<span class="tip-status task-a interval-10">&nbsp;</span></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;<span class="tip-status task-a interval-10">&nbsp;</span></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;<span class="tip-status test-piece-r interval-10"><i class="interval-1"></i></span></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;<span class="tip-status task-r interval-10"><i class="interval-1"></i></span></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+      </ul>
+        <div class="back-item back"></div>
+        <div class="back-item adjust-form">
+            <fieldset>
+                <div class="form-group">
+                    <label class="col-md-1 control-label" for="dtp_input1">开始时间</label>
+                    <div class="input-group date form_datetime col-md-5" data-link-field="dtp_input1" data-date-format="yyyy MM dd" data-date="2015-09-16T05:25:07Z">
+                        <input class="form-control" type="text" readonly="" value="" size="13">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </span>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </span>
+                    </div>
+                    <input id="dtp_input1" type="hidden" value="2015年-09-17日 10:50:07">
+                    <br>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-1 control-label" for="dtp_input1">结束时间</label>
+                    <div class="input-group date form_datetime col-md-5" data-link-field="dtp_input1" data-date-format="yyyy MM dd" data-date="2015-09-16T05:25:07Z">
+                        <input class="form-control" type="text" readonly="" value="" size="13">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </span>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </span>
+                    </div>
+                    <input id="dtp_input1" type="hidden" value="2015年-09-17日 10:50:07">
+                    <br>
+                </div>
+            </fieldset>
+            <a class="aclose btn btn-default">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </a>
+            <a class="fin btn btn-default"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="back-item adjust-load"></div>
     </div>
     <br><br><br><br>
     <div class="experiment-footer well">
@@ -188,11 +402,70 @@
       <a class="btn btn-info" href="">临时任务安排</a> 
     </div>
 
-    <script src="../js/jquery-1.9.1.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
     <script src="TDM-rollplan.js"></script>
     <script>
-      $('.rollplan-item').TDMRollPlan();
+    $('.experiment-item').TDMRollPlan();
+    // $('.form_datetime').datetimepicker({
+    //     language:  'zh-CN',
+    //     weekStart: 1,
+    //     todayBtn:  1,
+    //     autoclose: 1,
+    //     todayHighlight: 1,
+    //     startView: 2,
+    //     minView: 2,
+    //     forceParse: 0
+    // });
+
+    //动画
+    var f = $('.experiment-item').eq(1);
+
+    var k = f.find('td .test-piece-r');
+
+    function sd(){
+      var n = '';
+      var s = k.find('i').attr('class').replace(/\d+/g,function(w){
+            n = parseInt(w)+1
+            return n;
+          });
+          k.find('i').removeClass(k.find('i').attr('class')).addClass(s);
+          // if(n == 7){
+          //   clearInterval(t);
+          //   setTimeout(sd2,500);
+          //   setTimeout(sd3,1000);
+          //   setTimeout(sd4,1500);
+          // }
+    }
+
+    function sd2(){
+        k.removeClass('test-piece-r').addClass('test-piece-s');
+    }
+
+    function sd3(){
+        k.removeClass('interval-10').addClass('interval-7');
+        f.find('.task-a').eq(1).removeClass('interval-10').addClass('interval-7');
+    }
+
+    function sd4(){
+        var o =  f.find('.task-a').eq(2)
+            o2 = f.find('.task-r').eq(1);
+
+            o.closest('td').empty();
+            o2.closest('td').empty();
+            f.find('tr').eq(1).find('td').eq(7).append(o);
+            f.find('tr').eq(2).find('td').eq(7).append(o2)
+
+    }
+
+    // var t = setInterval(sd,500);
+
+
+    for(var i = 0;i<=6;i++){
+        setTimeout(sd,i*200);
+    }
     </script>
   </body>
 </html>
