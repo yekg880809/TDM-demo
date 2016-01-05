@@ -3,6 +3,12 @@ body{
    font-family: "微软雅黑";
 }
 
+.well{
+  margin-left: -20px\9;
+  overflow: hidden;
+  padding-left: 40px\9;
+}
+
 .experiment-title{
   padding: 5px auto 5px 20px;
   margin: 20px auto 10px;
@@ -34,8 +40,9 @@ body{
 .experiment-item{
   min-width: 98%;
   position: relative;
-  margin: 0 10px 10px;
+  margin: 0 10px 10px 10px;
   overflow: hidden;
+  margin-right: 30px\9;
 }
 
 .experiment-item .back-item{
@@ -464,6 +471,7 @@ body{
 }
 
 .task-describe th,.task-describe td{
+  -webkit-text-size-adjust:none;
   display: block;
   float: left;
   width: 16.66%;
@@ -509,6 +517,7 @@ table.task-list > thead > tr > th,table.task-list > tbody > tr > td{
  */
 .experiment-footer{
   z-index:2;
+  margin-left:0;
   padding-right:20px\9; 
 }
 
