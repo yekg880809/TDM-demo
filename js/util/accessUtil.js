@@ -4,7 +4,7 @@ define(["jquery", "setting"], function($) {
 		initConfig: function() {
 			var data = '';
 			$.ajax({
-				url: "..TDM-demo/config.json",
+				url: "config.json",
 				type: 'get',
 				async: false,
 				contentType: "application/json",
