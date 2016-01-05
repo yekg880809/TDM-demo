@@ -1,7 +1,7 @@
 {
 	"treeResource":"testData/treeData.json",
 
-	"initdata":"testData/initdata.json",
+	"initdata":"testData/initData.json",
 
 	"template":{
 		"baseUrl":"template/template.html"
